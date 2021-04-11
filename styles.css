@@ -1,0 +1,72 @@
+body {
+  background-color: azure;
+}
+
+h1 {
+  color: blue;
+}
+p {
+  color: darkgreen;
+}
+
+.twothird {
+  width: 66.66666%;
+}
+
+.thumbnail:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 250px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: left;
+}
+
+.tdpic {
+  padding: 0px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.plant-category table,
+.plant-category th,
+.plant-category td {
+  vertical-align: top;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 10px;
+  width: 20%;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
