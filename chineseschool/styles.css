@@ -1,0 +1,212 @@
+body {
+  background-color: rgb(215, 235, 227);
+}
+
+h1 {
+  color: blue;
+}
+p {
+  color: rgb(2, 10, 2);
+}
+
+.twothird {
+  width: 66.66666%;
+}
+
+.thumbnail:hover {
+  position: relative;
+  top: -25px;
+  left: -35px;
+  width: 250px;
+  height: auto;
+  display: block;
+  z-index: 999;
+}
+
+.currentmenu {
+  color: red;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr {
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  text-align: left;
+}
+
+.tdpic {
+  padding: 0px;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.tdpic {
+  padding: 0px;
+}
+
+.textbook table,
+.textbook th,
+.textbook td {
+  text-align: left;
+  border: 1px solid rgb(22, 7, 158);
+  border-collapse: collapse;
+  padding: 5px;
+}
+.textbook tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+ul.a {
+  list-style-type: circle;
+}
+
+ul.b {
+  list-style-type: square;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
+
+.scroll-left {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: yellow;
+  color: orange;
+  border: 1px solid orange;
+}
+
+.scroll-left p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
+  /* Starting position */
+  transform: translateX(100%);
+  /* Apply animation to this element */
+  animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+currentmenu {
+  color: red;
+  font-weight: bold;
+}
+
+.widget {
+  background-color: rgba(247, 245, 231, 0.7);
+  font-size: 14px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  margin: 20 0 24px;
+  padding: 20px;
+  word-wrap: break-word;
+}
+
+.widget .widget-title {
+  font: 300 italic 20px "Source Sans Pro", Helvetica, sans-serif;
+  margin: 0 0 10px;
+}
+
+.widget ul,
+.widget ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.widget li {
+  padding: 5px 0;
+}
+
+.widget .children li:last-child {
+  padding-bottom: 0;
+}
+
+.widget li > ul,
+.widget li > ol {
+  margin-left: 40px;
+}
+
+.widget a {
+  color: #bc360a;
+}
+
+.widget a:hover {
+  color: #ea9629;
+}
+
+/* Search widget */
+.search-form .search-submit {
+  display: none;
+}
+
+/* RSS Widget */
+.widget_rss .rss-date {
+  display: block;
+}
+
+.widget_rss .rss-date,
+.widget_rss li > cite {
+  color: #a2a2a2;
+}
+
+/* Calendar Widget */
+.widget_calendar table,
+.widget_calendar td {
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 1px;
+}
+
+.widget_calendar caption {
+  font-size: 14px;
+  margin: 0;
+}
+
+.widget_calendar th,
+.widget_calendar td {
+  padding: 0;
+  text-align: center;
+}
+
+.widget_calendar a {
+  display: block;
+}
+
+.widget_calendar a:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.widget_calendar tbody td {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.widget-area {
+  text-align: left;
+}

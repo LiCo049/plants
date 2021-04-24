@@ -55,6 +55,17 @@ tr:nth-child(even) {
   width: 20%;
 }
 
+.plant-details table {
+  width: 80%;
+}
+
+.plant-details table,
+.plant-details td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
 ul.a {
   list-style-type: circle;
 }
