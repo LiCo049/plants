@@ -1,0 +1,211 @@
+<html>
+
+<head>
+  <title>Welcome to NCS</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    div#banner {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #9dc4df;
+      width: 100%;
+    }
+
+    div#banner-content {
+      /* width: 800px; */
+      margin: 0 auto;
+      padding: 10px;
+
+    }
+
+    /* div#main-content {
+            padding-top: 103px;
+        } */
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="w3-top">
+
+    <div id="banner">
+      <div id="banner-content">
+        <table>
+          <tr>
+            <td> <img src="images/ChineseSchool.jpg" width="80" alt="School Logo"></td>
+            <td>
+              <h5>Welcome to</h5>
+              <h3> Nottingham Chinese School</h3>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Sidebar -->
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Menu</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
+      Our School
+    </a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">Textbooks </a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="admission.html">School Admissions </a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">
+      <currentmenu>Gallery</currentmenu>
+    </a>
+    <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
+  </nav>
+
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
+  <div class="w3-main" style="margin-left:220px; margin-top: 120px;">
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer"
+      title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:20px">
+
+
+      <div class="w3-container">
+        <h1><b>Galleries</b></h1>
+
+      </div>
+      <div class="w3-container">
+        <h2><b>Group 1</b></h2>
+
+      </div>
+      <!-- First Photo Grid-->
+      <!-- https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_templates_portfolio&stacked=h -->
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="gallery/group.jpg" alt="Writing" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>开场</b></p>
+            <p>2018新春表演</p>
+          </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom">
+          <img src="gallery/headmaster.jpg" alt="headmaster" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Headmaster</b></p>
+            <p>这是我们的校长，新春致辞</p>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <img src="gallery/DSC_0427.JPG" alt="Writing" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>作业</b></p>
+            <p>学生作业，字迹工整</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <!-- End page content -->
+    </div>
+
+
+
+
+    <!-- ================================= -->
+    <!-- 
+     NEWS ARCHIVES 
+    <div class="w3-quarter w3-container widget ">
+      <div class="w3-padding-small w3-padding-32 w3-center ">
+        <h3 class="widget-title">Archives</h3>
+        <ul>
+          <li><a href='#'>April 2021</a></li>
+          <li><a href='#'>November 2020</a></li>
+          <li><a href='#'>September 2020</a></li>
+          <li><a href='#'>August 2020</a></li>
+          <li><a href='#'>June 2020</a></li>
+          <li><a href='#'>April 2020</a></li>
+          <li><a href='#'>March 2020</a></li>
+          <li><a href='#'>February 2020</a></li>
+        </ul>
+      </div>
+
+    </div> -->
+
+
+
+    <!-- END MAIN -->
+
+
+    <script>
+      // Get the Sidebar
+      var mySidebar = document.getElementById("mySidebar");
+
+      // Get the DIV with overlay effect
+      var overlayBg = document.getElementById("myOverlay");
+
+      // Toggle between showing and hiding the sidebar, and add overlay effect
+      function w3_open() {
+        if (mySidebar.style.display === 'block') {
+          mySidebar.style.display = 'none';
+          overlayBg.style.display = "none";
+        } else {
+          mySidebar.style.display = 'block';
+          overlayBg.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+      }
+    </script>
+
+</body>
+
+</html>
