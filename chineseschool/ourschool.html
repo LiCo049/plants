@@ -36,23 +36,6 @@
       padding: 10px;
 
     }
-
-    /* div#main-content {
-            padding-top: 103px;
-        } */
-
-    /* table1 {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    tr {
-      border-bottom: 1px solid #ccc;
-    }
-
-    th {
-      text-align: left;
-    } */
   </style>
 
 
@@ -63,20 +46,29 @@
   <div class="w3-top">
 
     <div id="banner">
-      <div id="banner-content">
-        <table>
-          <tr>
-            <td> <img src="images/ChineseSchool.jpg" width="80" alt="School Logo"></td>
-            <td>
-              <h5>Welcome to</h5>
-              <h3> Nottingham Chinese School</h3>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
+      <table>
+        <tr>
+          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
+          <td>
+            <!-- <h6>Welcome to</h6> -->
+            <h3 class="title-banner"> &nbsp;&nbsp; Nottingham Chinese School</h3>
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+              <a href="#aboutus" class="w3-bar-item w3-button w3-medium w3-hover-green">About Us</a>
+              <a href="#committee" class="w3-bar-item w3-button w3-medium w3-hover-green">Committee</a>
+              <a href="#calendar" class="w3-bar-item w3-button w3-medium w3-hover-green">School Calendar</a>
+              <a href="#classes" class="w3-bar-item w3-button w3-medium w3-hover-green">Classes</a>
+              <a href="#procedures" class="w3-bar-item w3-button w3-medium w3-hover-green"> Other procedures</a>
+              <!-- <a href="#firedrill" class="w3-bar-item w3-button w3-medium w3-hover-green"> Fire Drill</a>
+              <a href="#childprotection" class="w3-bar-item w3-button w3-medium w3-hover-green">Child Protection </a>
+              <a href="#complaints" class="w3-bar-item w3-button w3-medium w3-hover-green">Complaints</a>
+              <a href="#rota" class="w3-bar-item w3-button w3-medium w3-hover-green">Parent Rota</a> -->
+            </div>
+          </td>
+        </tr>
+      </table>
 
-  </div>
+    </div>
   </div>
 
   <!-- Sidebar -->
@@ -107,12 +99,12 @@
     id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:220px; margin-top: 120px;">
+  <div class="w3-main" style="margin-left:220px; ">
 
     <!-- <div class="w3-row w3-padding-64"> -->
-    <div class="w3-threequarter w3-container">
+    <div class="w3-container" style="width: 95%;">
 
-      <h2 class="w3-text-blue">About Us</h2>
+      <h2 class="w3-text-blue" id="aboutus" style="padding-top: 120px;">About Us</h2>
 
       <p>Nottingham Chinese School was founded in 1999. In 2020 there were more than 300 pupils in seventeen classes.
         The teaching is based on textbooks specially designed for overseas students (ages 4.5-18)
@@ -122,6 +114,7 @@
         The school runs on Saturday afternoons, from 12:15 to 14:15, or from 14:30 to 16:30 for language classes.
         Activity classes (such as dancing, painting, musical instrument and caligraphy) run from 13:30 to 14:30, or
         14:30 to 15:30.
+
       </p>
       <p>Nottingham Chinese Schools is located at the Alderman White School Chilwell Lane,
         Bramcote, NG9 3DU, Nottingham.
@@ -141,8 +134,8 @@
         together by Drs Zhang Kefei and Yi Wang with the support from members of the CSSA-NOTT. The school was
         officially founded on the 21st March 1999 and it is managed by the school committee. Since then the school has
         been progressing steadily.</p>
-      <br>
-      <h2 class="w3-text-blue">School Committee</h2>
+      <!-- School Committee School Committee School Committee School Committee-->
+      <h2 class="w3-text-blue" id="committee" style="padding-top: 120px;">School Committee</h2>
 
       <table>
         <tr>
@@ -181,9 +174,8 @@
 
       </table>
 
-      <br>
-
-      <h2 class="w3-text-blue">School Calendar</h2>
+      <!-- School Calendar School Calendar School Calendar School Calendar-->
+      <h2 class="w3-text-blue" id="calendar" style="padding-top: 120px;">School Calendar</h2>
 
       School year 2020-21 opens on the morning Tuesday 1 September 2020,
       and ends on the evening Wednesday 28 July 2021. School does not open on the following days:
@@ -204,13 +196,215 @@
           title="School Terms and Holidays 2020 to 21">Nottingham
           Chinese School Calendar 2020 to 21</a>
       </p>
-      <br>
-      <br> <br> <br>
+
+
+      <!-- Class rooms and sessions -->
+      <!-- Class rooms and sessions -->
+
+
+      <h2 class="w3-text-blue" id="classes" style="padding-top: 120px;">Session Timetable</h2>
+      <p>Nottingham Chinese School provide various activity classes, including Chinese calligraphy, painting, dancing,
+        recitation and musical intrument (Pipa). Activity classes are held from 13:15 ~ 14:15, or 14:30~15:30. For more
+        details on activity classes and their availability, please contact school.</p>
+
+      <table style="width: 80%;">
+        <thead>
+          <tr style="text-align: left;">
+            <th>Class</th>
+            <th>Teacher</th>
+            <th>Time</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>Dancing</td>
+          <td>S. Dong (董)</td>
+          <td>13:30pm ~ 14:30pm</td>
+          <td>Drama Room</td>
+        </tr>
+
+        <tr>
+          <td>Music </td>
+          <td>S. Zhang (张)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Calligraphy </td>
+          <td>Y. Li (李)</td>
+          <td>13：15pm ~ 14:15pm</td>
+          <td>Language Building</td>
+        </tr>
+
+        <tr>
+          <td>Painting </td>
+          <td>F. Lee (李)</td>
+          <td>13：15pm ~ 14:15pm or 14:30pm ~ 15:30pm</td>
+          <td>Library</td>
+        </tr>
+      </table>
+      <br><br>
+      <p>Language lessons range from reception upto A-level.
+      </p>
+
+      <table style="width: 80%;">
+        <thead>
+          <tr style="text-align: left;">
+            <th>Class</th>
+            <th>Teacher</th>
+            <th>Time</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>Reception 1</td>
+          <td>T. Zhang (张)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Reception 2</td>
+          <td>T. Zhang (张)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Class 1a</td>
+          <td>Y. Deng (邓)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 1b</td>
+          <td>Y. Deng (邓)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+
+        <tr>
+          <td>Class 1c</td>
+          <td>Y. Li (李)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 2a</td>
+          <td>Q. Shi (史)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 2b</td>
+          <td>Y. Li (李)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 3a</td>
+          <td>G. Wang (王)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 3b</td>
+          <td>Y. Minnican (潘)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 4a</td>
+          <td>S. Guo (郭)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 4b</td>
+          <td>L. Ye (叶)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 5a</td>
+          <td>J. Liao (廖)</td>
+          <td>12:15pm ~ 14:15pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 5b</td>
+          <td>S. Dong (董)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 6</td>
+          <td>C. Jiang (蒋)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 7</td>
+          <td>Y. Chen (陈)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 8 / GCSE</td>
+          <td>J. Tang (唐)</td>
+          <td>13:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Class 9 / A-level</td>
+          <td>S. Brealey (常)</td>
+          <td>14:30pm ~ 16:30pm</td>
+          <td></td>
+        </tr>
+      </table>
+
+
+
+      <!-- Other procedures Other procedures Other procedures Other procedures  -->
+      <!-- Other procedures Other procedures Other procedures Other procedures  -->
+      <!-- Class rooms and sessions -->
+
+
+      <h2 class="w3-text-blue" id="procedures" style="padding-top: 120px;">Other Procedures</h2>
+
+<p>应急措施 – 消防演习</p>
+
+<p>儿童保护措施 </p>
+
+<p>家长轮值表 </p>
+
+
+
+<p>投诉程序 </p>
+
+
+
+
     </div>
 
 
     <!-- NEWS ARCHIVES -->
-    <div class="w3-quarter w3-container widget ">
+    <!-- <div class="w3-quarter w3-container widget ">
       <div class="w3-padding-small w3-padding-32 w3-center ">
         <h3 class="widget-title">Archives</h3>
         <ul>
@@ -225,7 +419,7 @@
         </ul>
       </div>
 
-    </div>
+    </div> -->
 
 
 
@@ -256,6 +450,7 @@
         overlayBg.style.display = "none";
       }
     </script>
+    <br><br><br><br><br><br><br><br><br><br>
 
 </body>
 

@@ -50,24 +50,24 @@
   <div class="w3-top">
 
     <div id="banner">
-      <div id="banner-content">
-        <table>
-          <tr>
-            <td> <img src="images/ChineseSchool.jpg" width="80" alt="School Logo"></td>
-            <td>
-              <h5>Welcome to</h5>
-              <h3> Nottingham Chinese School</h3>
-            </td>
-          </tr>
-        </table>
-      </div>
+
+      <table>
+        <tr>
+          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
+          <td>
+            <h6>Welcome to</h6>
+            <h3 class="title-banner"> Nottingham Chinese School</h3>
+          </td>
+        </tr>
+      </table>
+
     </div>
 
   </div>
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-15" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()"
       class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
       <i class="fa fa-remove"></i>
@@ -76,14 +76,21 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">
       <currentmenu>News</currentmenu>
     </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">Our School </a>
+    <a class="w3-bar-item w3-button w3-hover-blue " href="ourschool.html">Our School </a>
+    <!-- <button class="w3-bar-item w3-button w3-hover-blue dropdown-btn ">Our School  <i class="fa fa-caret-down"></i> </button>
+   
+    <div class="dropdown-container">
+      <a class="w3-bar-item w3-button w3-hover-green w3-medium" href="#">Link 11</a>
+      <a class="w3-bar-item w3-button w3-hover-green w3-medium" href="#">Link 22</a>
+      <a class="w3-bar-item w3-button w3-hover-green w3-medium" href="#">Link 33</a>
+    </div> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">Textbooks </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="admission.html">School Admissions </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue"
       href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">School
-      Admissions </a>
+      Admissions / 招生 </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
@@ -185,6 +192,24 @@
         overlayBg.style.display = "none";
       }
     </script>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+    } else {
+    dropdownContent.style.display = "block";
+    }
+    });
+  }
+  </script>
 
 </body>
 
