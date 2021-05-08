@@ -40,6 +40,103 @@
     /* div#main-content {
             padding-top: 103px;
         } */
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+      background-color: rgb(153, 224, 229);
+      /* background-image: url('images/ChineseSchool.jpg'); */
+      background-size: cover;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #180a0a;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 12.5%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* width: 50%; */
+    }
   </style>
 
 
@@ -89,8 +186,7 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="admission.html">School Admissions </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue"
-      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">School
-      Admissions / 招生 </a>
+      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
@@ -107,57 +203,250 @@
 
     <!-- <div class="w3-row w3-padding-64"> -->
     <div class="w3-threequarter w3-container">
-      <!-- Scrolling text is defined here  -->
 
-      <marquee behavior="scroll" direction="left">This area displays the most recent news and other stuff...
+
+      <!-- Scrolling text is defined here  -->
+      <marquee behavior="scroll" direction="left">Welcome to the new website for Nottingham Chinese School.
+        欢迎访问诺丁汉中文学校新网站。
       </marquee>
 
+      <h2 style="text-align:center; font-family: cursive;">What's On</h2>
+      <h5 style="text-align:center; font-family: cursive;">Visit the Gallery Section to see more photos ^_^ </h5>
+
+      <div class="container">
+        <div class="mySlides">
+          <div class="numbertext">1 / 8</div>
+          <img src="gallery/001.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 8</div>
+          <img src="gallery/002.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 8</div>
+          <img src="gallery/003.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 8</div>
+          <img src="gallery/004.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 8</div>
+          <img src="gallery/005.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 8</div>
+          <img src="gallery/006.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 8</div>
+          <img src="gallery/007.jpg" style="height:300px;" class="center">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 8</div>
+          <img src="gallery/008.jpg" style="height:300px;" class="center">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!-- <div class="caption-container">
+          <p id="caption"></p>
+        </div> -->
+        <br>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="gallery/In001.jpg" style="height:55px;" onclick="currentSlide(1)" alt="图片 1">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In002.jpg" style="height:55px;" onclick="currentSlide(2)" alt="图片 2">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In003.jpg" style="height:55px;" onclick="currentSlide(3)" alt="图片 3">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In004.jpg" style="height:55px;" onclick="currentSlide(4)" alt="图片 4">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In005.jpg" style="height:55px;" onclick="currentSlide(5)" alt="图片 5">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In006.jpg" style="height:55px;" onclick="currentSlide(6)" alt="图片 6">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In007.jpg" style="height:55px;" onclick="currentSlide(7)" alt="图片 7">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="gallery/In008.jpg" style="height:55px;" onclick="currentSlide(8)" alt="图片 8">
+          </div>
+        </div>
+      </div>
 
 
-      <h2 class="w3-text-blue fontchinese">演讲比赛</h2>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-      <p class="fontchinese">同学们正在积极的练习。。。
+      <br>
+      <br>
+      <br>
+
+
+
+
+
+      <h2 class="w3-text-blue ">Global Chinese Reading Competition Results</h2>
+      <h5>朗诵比赛结果 <span class="w3-opacity">May 5, 2021</span></h5>
+      <p>
+        We have a great news here! </p>
+      <p>
+        Congratulations to our students who participated in 4th Global Chinese Reading competition - UK Division
+        achieved excellent results! With 10 Gold medals, 4 Silver medals, 2 Image Awards, 2 Stage Presence awards, 3
+        Sound awards in this competition. It is worth mentioning that all the contestants in our school have won at
+        least one award. A huge “Thank You” to the tutors Ms. Xu and Ms. He, your professional guidance and your great
+        effort during the preparation of the competition were made this happen. Also a huge “Thank You” to the parents,
+        you have worked so hard to get the children ready for it, our support and enthusiasm were much appreciated.
+        Finally, thanks to our amazing 16 contestants, you are the best! Thanks to the support of the relatives and
+        friends group, 11 students won the popularity award.
+      </p>
+      <p class="fontchinese">好消息！
       </p>
       <p class="fontchinese">
-        老师们正在积极的培训。。。
+        热烈祝贺我校选手们在本届朗诵比赛伯明翰复赛中取得优异的成绩！以10枚金奖，4枚银奖，2枚最佳形象奖, 2枚最佳台风奖,
+        3名最佳声音奖的骄人成绩在本次比赛中大放光彩。值得一提的是我们学校所有参赛选手都获得至少一个奖项。特别感谢这次比赛的指导老师徐老师和何老师，孩子们今天的成绩与你们专业的指导和辛苦的付出是密不可分的。也感谢家长们为准备这次比赛在背后的努力和汗水，军功章里有你们的一半！最后要感谢我们努力又自信的参赛小选手们，你们是最棒的！
+        也感谢亲友团的支持，12位同学获得了人气奖。
       </p>
+
+
+
+      <h2 class="w3-text-blue">Summer Term Starts</h2>
+      <h5>暑期学期开学 <span class="w3-opacity">April 20, 2021</span></h5>
+      <p>Dear All, I hope you had a pleasant Easter break. </p>
+      <p>The Chinese School reopens on 24th April online. Summer term starts from this Saturday. </p>
+      <p>This term ends on Saturday 17th July. The end of year assessment is scheduled in early June, and parents
+        meeting is going to be in the last two weeks of the summer term. The recruitment of new students will begin in
+        May.
+      </p>
+
+      <p>On the 10th April, our school's recitation contest was successfully concluded with 24 participants. Each
+        student put in a great effort into their work and the performance was amazing, with the exciting result of that
+        16 students will take part in the semi-final contest in Birmingham on 2nd May, the winning students will
+        represent the school and the UK in the 4th Global Recitation Competition. All the students who take part in our
+        school contest will receive two certificates, one is from the UK Association of Promoting Chinese Education, and
+        the other is from Nottingham Chinese School.
+      </p>
+      <p>For those who pay their school fee every term please pay the fee online. </p>
+
+
+      <p class="fontchinese">大家好！ 希望大家都度过了一个愉快的复活节假期。 </p>
+      <p class="fontchinese">中文学校4月24号在线开学。 夏季学期从这个周六开始。 </p>
+      <p class="fontchinese">这个学期到7月17号结束。年度评测安排在6月初，家长会安排在学期结束前一，二周。新生招收工作将在5月开始。 </p>
+      <p class="fontchinese">
+        学校在4月10号举行的朗诵比赛圆满结束，共有24位同学参加。同学们的表现非常优秀，其中16名同学将参加5月2号伯明翰地区的复赛，获胜的同学将代表学校和英国参加第4届全球朗诵比赛的决赛。所有参加我们学校初赛的同学都有英国中文教育促进会的参赛证书和诺丁汉中文学校的参赛证书。
+      </p>
+      <p class="fontchinese">按学期付费的家长请在网上付学费。 </p>
+
+
+
+
+      <h2 class="w3-text-blue">Nottingham Chinese School Spring Festival</h2>
+      <h5>中文学校牛年新春演出 <span class="w3-opacity">Feb 24, 2021</span></h5>
+      <p> Dear All,
+      </p>
+      <p>Our Chinese New Year Gala will be held online this Saturday from 13:00 to 15:00. You are warmly invited to join
+        the celebration. The Zoom links is shown below.
+      </p>
+      <p>Join Zoom Meeting <br>
+        https://zoom.us/j/91632165068?pwd=R0NrYXJQRStVZ0hqcDdjQlBjaGhXUT09 <br>
+        Meeting ID: 916 3216 5068 <br>
+
+
+      </p>
+      <p>The content of the Gala is rich and colourful, including talking, singing, dancing, musical instruments,
+        kung-fu, and etc. The performances of the students are well prepared and dedicated after teachers’ skilful and
+        thoughtful editing. They are worth looking forward to. The Gala will be full of joys and happiness. Performances
+        are stunning super. We thank all students who contributed and two charming presenters for their enormous
+        efforts. Xu Weimeng Laoshi is the director the gala show and is a true heroin. We are grateful to Nottingham
+        Confucius Institute for its generous support.
+      </p>
+
+      <p>During the show, we will have a WeChat game of Grabbing a Red Envelope to bring more festival atmosphere.
+        Please pay attention to the announcement in between performances. We will also have a WeChat poll to select
+        three most popular programs. Your vote will be important. The program is attached with the email.
+      </p>
+      <p>Thanks to the students for actively participating in the New Year / Lantern Festival greeting card design and
+        composition competition. All students who participated can get two packs of glutinous rice balls (Yuan Xiao)
+        rewards from the school in Deyi Hang Supermarket (251 Ilkeston Rd, Lenton, Nottingham NG7 3FX). All students who
+        have participated in the competition will have certificates, and the winners will be awarded certificates and
+        prizes (Voucher). Certificates and reward notices will be sent to the parents by email.
+      </p>
+
+      <p>The volunteer teachers from the Confucius Institute, Hu Laoshi and Chen Laoshi, will return to China after
+        studying in the UK. We thank the two teachers for their hard work and wish them all the best in China.
+      </p>
+
+      <p>We will welcome two new teachers, Guo Laoshi and Cui Laoshi to take over their work.
+      </p>
+
       <p>
-        "... Lessons are well-strcutured with pupils focused and engaged ... Descipline is good, as is
-        support from parents adn of course the Management Committee. This is a well run school with lots of
-        innovation and a desire to continually improve ..."</p>
+      </p>
+
+      <p>
+      </p>
+
+
+      <p class="fontchinese"> 大家好， </p>
+
+      <p class="fontchinese"> 学校的牛年新春庆祝活动定于这周六（27号）下午1点到3点在Zoom会堂举行。敬请各位学生，家长，老师和友人准时光临联欢会。Zoom会堂的链接如下。 </p>
+
+      <p class="fontchinese">
+      <p>Join Zoom Meeting <br>
+        https://zoom.us/j/91632165068?pwd=R0NrYXJQRStVZ0hqcDdjQlBjaGhXUT09 <br>
+        Meeting ID: 916 3216 5068 <br>
+
+
+      </p>
+
+      <p class="fontchinese">
+        晚会节目内容丰富多彩，有说有唱，有舞蹈，有乐器，有功夫，有杂技。学生们的表演杰出，认真，经过老师们的精心编辑后更值得期待。节目质量非常棒，充满了喜悦，祥和和欢乐。我们非常感谢学生演员们和两位青春阳光的主持人的辛勤努力。徐玮萌老师是联欢会的总导演，是真正的幕后英雄。我们也衷心感谢诺丁汉孔子学院的大力支持。
+      </p>
+
+      <p class="fontchinese"> 为了活跃气氛，我们将在学校微信群办三次抢红包游戏，请大家注意主持人的提醒哦。另外，我们还举行微信投票，选出最受欢迎的3个节目，请大家现场积极投票。 </p>
+
+      <p class="fontchinese">
+        感谢同学们积极参加学校举办的新春元宵贺卡设计和作文比赛，所有参赛的同学都可以在得意行获得学校奖励得两包汤圆。参赛得同学都有证书，获奖得同学将获颁奖状和奖品（Voucher）。证书和奖励通知由邮件发给参赛家长。 </p>
+
+      <p class="fontchinese"> 来自孔子学院得志愿者老师，胡老师和陈老师，将结束在英国得学习后回中国发展。我们感谢两位老师得努力工作，也祝愿她们一切顺利。 </p>
+
+      <p class="fontchinese"> 我们欢迎两位新老师，郭老师和崔老师，接着上课。 </p>
+
+      <br><br><br><br><br><br>
 
 
 
-      <h2 class="w3-text-blue">新闻</h2>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-      <p>BLAH BLAH</p>
-      <p>MORE BLAH BLAH</p>
-      <p>MORE MORE BLAH BLAH</p>
-      <p>MORE MORE MORE BLAH BLAH</p>
-
-      <h2 class="w3-text-teal">More news</h2>
-      <h5>Title description, <span class="w3-opacity">April 2, 2014</span></h5>
-      <p>The idea behind the school started in the begining of Feb 1999 by Dr Qingping Zheng and further
-        effort was put together by Drs Zhang Kefei and Yi Wang with the support from members of the
-        CSSA-NOTT. The school was officially founded on the 21st March 1999 and it is managed by the school
-        committee. Since then the school has been progressing steadily. </p>
 
 
     </div>
+  
+
 
     <!-- NEWS ARCHIVES -->
     <div class="w3-quarter w3-container widget ">
       <div class="w3-padding-small w3-padding-32 w3-center ">
         <h3 class="widget-title">Archives</h3>
         <ul>
-          <li><a href='#'>April 2021</a></li>
-          <li><a href='#'>November 2020</a></li>
-          <li><a href='#'>September 2020</a></li>
+          <li><a href='news2104.html'>April 2021</a></li>
+          <li><a href='news2102.html'>February 2021</a></li>
+          <!-- <li><a href='#'>September 2020</a></li>
           <li><a href='#'>August 2020</a></li>
           <li><a href='#'>June 2020</a></li>
           <li><a href='#'>April 2020</a></li>
           <li><a href='#'>March 2020</a></li>
-          <li><a href='#'>February 2020</a></li>
+          <li><a href='#'>February 2020</a></li> -->
         </ul>
       </div>
 
@@ -193,23 +482,54 @@
       }
     </script>
 
-<script>
-  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-  var dropdown = document.getElementsByClassName("dropdown-btn");
-  var i;
-  
-  for (i = 0; i < dropdown.length; i++) {
-    dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-    dropdownContent.style.display = "none";
-    } else {
-    dropdownContent.style.display = "block";
-    }
-    });
-  }
-  </script>
+    <script>
+      /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+      var dropdown = document.getElementsByClassName("dropdown-btn");
+      var i;
+
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
 
 </body>
 
