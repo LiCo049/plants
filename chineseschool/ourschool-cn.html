@@ -48,8 +48,7 @@
     <div id="banner">
       <table>
         <tr>
-          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
-          <td>
+          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>     <td>
             <!-- <h6>Welcome to</h6> -->
             <h3 class="title-banner"> &nbsp;&nbsp; Nottingham Chinese School</h3>
             <!-- Right-sided navbar links -->
@@ -58,7 +57,7 @@
               <a href="#committee" class="w3-bar-item w3-button w3-medium w3-hover-green">校委会</a>
               <a href="#calendar" class="w3-bar-item w3-button w3-medium w3-hover-green">校历</a>
               <a href="#classes" class="w3-bar-item w3-button w3-medium w3-hover-green">课程时间安排</a>
-              <a href="#procedures" class="w3-bar-item w3-button w3-medium w3-hover-green">相关注意手册</a>
+              <a href="#procedures" class="w3-bar-item w3-button w3-medium w3-hover-green">相关注意规则</a>
               <a href="ourschool.html"><img src="images/icon-eng.png" height="30"></a> <a href=""><img src="images/icon-ch.png" height="30"></a>
               
             </div>
@@ -70,12 +69,9 @@
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
     <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
       <currentmenu>Our School</currentmenu>
@@ -84,11 +80,11 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
     <a class="w3-bar-item w3-button w3-hover-blue"
-      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
+      href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
-  </nav>
+  </div>
 
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -96,7 +92,10 @@
     id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:220px; ">
+  <div class="w3-main" style="margin-left:220px; margin-top: 90px; ">
+    <div>
+      <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+    </div>
 
     <!-- <div class="w3-row w3-padding-64"> -->
     <div class="w3-container" style="width: 95%;">
@@ -134,12 +133,12 @@
           <td>孙雪中博士</td>
         </tr>
         <tr>
-          <td><b>财务</b></td>
-          <td>徐老师</td>
-        </tr>
-        <tr>
           <td><b>秘书</b></td>
           <td>刘浩教授</td>
+        </tr>
+        <tr>
+          <td><b>财务</b></td>
+          <td>徐老师</td>
         </tr>
         <tr>
           <td><b>副校长</b></td>
@@ -378,9 +377,16 @@
       <!-- Class rooms and sessions -->
 
 
-      <h2 class="w3-text-blue" id="procedures" style="padding-top: 120px;">相关注意手册</h2>
+      <h2 class="w3-text-blue" id="procedures" style="padding-top: 120px;">相关注意规则</h2>
 
       <table>
+        <tr>
+          <td>
+            <a href="download/诺丁汉中文学校招生规则.pdf"><img src="images/adobe-pdf-icon.svg"
+                height="30">&nbsp;招生规则</a>
+          </td>
+        </tr>
+
         <tr>
           <td>
             <a href="download/诺丁汉中文学校手册-消防演习.pdf"><img src="images/adobe-pdf-icon.svg"
@@ -409,8 +415,7 @@
             height="30">&nbsp;投诉程序</a>
           </td>
         </tr>
-        
-        
+                
 
       </table>
 
@@ -420,23 +425,6 @@
     </div>
 
 
-    <!-- NEWS ARCHIVES -->
-    <!-- <div class="w3-quarter w3-container widget ">
-      <div class="w3-padding-small w3-padding-32 w3-center ">
-        <h3 class="widget-title">Archives</h3>
-        <ul>
-          <li><a href='#'>April 2021</a></li>
-          <li><a href='#'>November 2020</a></li>
-          <li><a href='#'>September 2020</a></li>
-          <li><a href='#'>August 2020</a></li>
-          <li><a href='#'>June 2020</a></li>
-          <li><a href='#'>April 2020</a></li>
-          <li><a href='#'>March 2020</a></li>
-          <li><a href='#'>February 2020</a></li>
-        </ul>
-      </div>
-
-    </div> -->
 
 
 
@@ -452,19 +440,11 @@
 
       // Toggle between showing and hiding the sidebar, and add overlay effect
       function w3_open() {
-        if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = 'block';
-          overlayBg.style.display = "block";
-        }
+        document.getElementById("mySidebar").style.display = "block";
       }
 
-      // Close the sidebar with the close button
       function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
+        document.getElementById("mySidebar").style.display = "none";
       }
     </script>
     <br><br><br><br><br><br><br><br><br><br>

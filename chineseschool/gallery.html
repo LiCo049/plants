@@ -53,7 +53,7 @@
 
       <table>
         <tr>
-          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
+          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>
           <td>
             <h6>Welcome to</h6>
             <h3 class="title-banner"> Nottingham Chinese School</h3>
@@ -65,12 +65,9 @@
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
     <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
       Our School
@@ -79,13 +76,13 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
     <a class="w3-bar-item w3-button w3-hover-blue"
-      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
+      href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
 
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">
       <currentmenu>Gallery</currentmenu>
     </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
-  </nav>
+  </div>
 
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -100,8 +97,10 @@
       title="close side menu" id="myOverlay"></div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="w3-main" style="margin-left:20px">
-
+    <div class="w3-main" style="margin-left:0px; margin-top:100px;">
+      <div>
+        <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+      </div>
 
       <div class="w3-container">
         <h2 class="w3-text-blue">Galleries</h2>
@@ -113,6 +112,34 @@
 
       </div>
       <!-- First Photo Grid-->
+
+      <div class="w3-row-padding">
+        <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity">
+          <img src="gallery/019.jpg" style="width:100%" onclick="onClick(this)">
+          <div class="w3-container w3-white">
+            <p>全英普通话朗诵比赛-最佳组织学校<br>
+              Global Chinese Reading Competition - Best School</p>
+          </div>
+        </div>
+
+        <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity">
+          <img src="gallery/017.jpg" style="width:100%" onclick="onClick(this)">
+          <div class="w3-container w3-white">
+            <p>春节表演
+              <br> Spring Festival Performance
+            </p>
+          </div>
+        </div>
+        <div class="w3-third w3-container  w3-margin-bottom w3-hover-opacity">
+          <img src="gallery/018.jpg" style="width:100%" onclick="onClick(this)">
+          <div class="w3-container w3-white">
+            <p>春节活动
+              <br> Spring Festival Activities
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity">
           <img src="gallery/001.jpg" style="width:100%" onclick="onClick(this)">
@@ -244,22 +271,7 @@
           </div>
         </div>
 
-        <div class="w3-third w3-container w3-margin-bottom w3-hover-opacity">
-          <img src="gallery/017.jpg" style="width:100%" onclick="onClick(this)">
-          <div class="w3-container w3-white">
-            <p>春节表演
-              <br> Spring Festival Performance
-            </p>
-          </div>
-        </div>
-        <div class="w3-third w3-container  w3-margin-bottom w3-hover-opacity">
-          <img src="gallery/018.jpg" style="width:100%" onclick="onClick(this)">
-          <div class="w3-container w3-white">
-            <p>春节活动
-              <br> Spring Festival Activities
-            </p>
-          </div>
-        </div>
+
       </div>
 
 
@@ -328,19 +340,11 @@
 
 
       function w3_open() {
-        if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = 'block';
-          overlayBg.style.display = "block";
-        }
+        document.getElementById("mySidebar").style.display = "block";
       }
 
-      // Close the sidebar with the close button
       function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
+        document.getElementById("mySidebar").style.display = "none";
       }
 
       // Modal Image Gallery

@@ -56,7 +56,7 @@
 
       <table>
         <tr>
-          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
+          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>
           <td>
             <h6>Welcome to</h6>
             <h3 class="title-banner"> Nottingham Chinese School</h3>
@@ -67,15 +67,12 @@
     </div>
 
   </div>
-  </div>
+
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-15" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+
     <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">
       <currentmenu>News</currentmenu>
     </a>
@@ -84,12 +81,12 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
     <a class="w3-bar-item w3-button w3-hover-blue"
-      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
+      href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
 
-  </nav>
+  </div>
 
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -98,7 +95,9 @@
 
   <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
   <div class="w3-main" style="margin-left:220px; margin-top: 120px;">
-
+    <div>
+      <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+    </div>
     <!-- <div class="w3-row w3-padding-64"> -->
     <div class="w3-threequarter w3-container">
 
@@ -110,8 +109,8 @@
         the celebration. The Zoom links is shown below.
       </p>
       <p>Join Zoom Meeting <br>
-        https://zoom.us/j/91632165068?pwd=R0NrYXJQRStVZ0hqcDdjQlBjaGhXUT09 <br>
-        Meeting ID: 916 3216 5068 <br>
+        https://zoom.us/j/91632165068?pwd=xxxxxxx <br>
+        Meeting ID: 916 3216 xxxx (expired) <br>
 
 
       </p>
@@ -190,12 +189,7 @@
         <ul>
           <li><a href='news2104.html'>April 2021</a></li>
           <li><a href='news2102.html'>February 2021</a></li>
-          <!-- <li><a href='#'>September 2020</a></li>
-          <li><a href='#'>August 2020</a></li>
-          <li><a href='#'>June 2020</a></li>
-          <li><a href='#'>April 2020</a></li>
-          <li><a href='#'>March 2020</a></li>
-          <li><a href='#'>February 2020</a></li> -->
+        
         </ul>
       </div>
 
@@ -215,19 +209,11 @@
 
       // Toggle between showing and hiding the sidebar, and add overlay effect
       function w3_open() {
-        if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = 'block';
-          overlayBg.style.display = "block";
-        }
+        document.getElementById("mySidebar").style.display = "block";
       }
 
-      // Close the sidebar with the close button
       function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
+        document.getElementById("mySidebar").style.display = "none";
       }
     </script>
 

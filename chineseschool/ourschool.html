@@ -48,7 +48,8 @@
     <div id="banner">
       <table>
         <tr>
-          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
+          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>
+          <td>
           <td>
             <!-- <h6>Welcome to</h6> -->
             <h3 class="title-banner"> &nbsp;&nbsp; Nottingham Chinese School</h3>
@@ -71,12 +72,9 @@
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
     <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
       <currentmenu>Our School</currentmenu>
@@ -85,11 +83,11 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
     <a class="w3-bar-item w3-button w3-hover-blue"
-      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
+      href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
-  </nav>
+  </div>
 
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -97,7 +95,11 @@
     id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:220px; ">
+  <div class="w3-main" style="margin-left:220px; margin-top: 90px;">
+    <div>
+      <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+    </div>
+
 
     <!-- <div class="w3-row w3-padding-64"> -->
     <div class="w3-container" style="width: 95%;">
@@ -109,7 +111,8 @@
         studying Chinese. The teaching covers from beginners to GCSE and A level Chinese.
       </p>
       <p>
-        Nottingham Chinese School runs on Saturday afternoons, from 12:15 to 14:15, or from 14:30 to 16:30 for language classes.
+        Nottingham Chinese School runs on Saturday afternoons, from 12:15 to 14:15, or from 14:30 to 16:30 for language
+        classes.
         Activity classes (such as dancing, painting, musical instrument and caligraphy) run from 13:30 to 14:30, or
         14:30 to 15:30.
 
@@ -137,17 +140,18 @@
 
       <table>
         <tr>
-          <td><b>Headteacher</b></td>
+          <td><b>Headmaster</b></td>
           <td>Dr Xuezhong Sun</td>
-        </tr>
-        <tr>
-          <td><b>Treasurer</b></td>
-          <td>Weimeng Xu</td>
         </tr>
         <tr>
           <td><b>Secretary</b></td>
           <td>Prof Hao Liu</td>
         </tr>
+        <tr>
+          <td><b>Treasurer</b></td>
+          <td>Weimeng Xu</td>
+        </tr>
+
         <tr>
           <td><b>Deputy Head & e-Learning</b></td>
           <td>Dr Rong Qu, Li Li</td>
@@ -205,8 +209,8 @@
         recitation and musical intrument (Pipa). Activity classes are held from 13:15 ~ 14:15, or 14:30~15:30. For more
         details on activity classes and their availability, please contact school.</p>
 
-        <p>School map is shown below:  </p>
-        <img src="images/schoolmap-en.PNG" style="height:350px;" > <br><br>
+      <p>School map is shown below: </p>
+      <img src="images/schoolmap-en.PNG" style="height:350px;"> <br><br>
 
       <table style="width: 80%;">
         <thead>
@@ -392,6 +396,13 @@
       <table>
         <tr>
           <td>
+            <a href="download/NCS Admission Procedure.pdf"><img src="images/adobe-pdf-icon.svg"
+                height="30">&nbsp;School Admission Procedure</a>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
             <a href="download/NCS Handbook - Fire Drill.pdf"><img src="images/adobe-pdf-icon.svg"
                 height="30">&nbsp;Emergency - Fire Drill</a>
           </td>
@@ -401,8 +412,8 @@
           <td>
             <a href="download/NCS - Child Protection Procedures.pdf"><img src="images/adobe-pdf-icon.svg"
                 height="30">&nbsp;Child Protection</a>
-          </td>       
-         
+          </td>
+
         </tr>
 
         <tr>
@@ -410,17 +421,17 @@
             <a href="download/NCS - Tuition and School Duty deposit.pdf"><img src="images/adobe-pdf-icon.svg"
                 height="30">&nbsp;Tuition and School Duty Deposit</a>
           </td>
-        
+
         </tr>
 
         <tr>
           <td>
-          <a href="download/Complaints Procedures.pdf"><img src="images/adobe-pdf-icon.svg"
-            height="30">&nbsp;Complants Procedures</a>
+            <a href="download/Complaints Procedures.pdf"><img src="images/adobe-pdf-icon.svg"
+                height="30">&nbsp;Complants Procedures</a>
           </td>
         </tr>
-        
-        
+
+
 
       </table>
 
@@ -463,20 +474,13 @@
       var overlayBg = document.getElementById("myOverlay");
 
       // Toggle between showing and hiding the sidebar, and add overlay effect
+
       function w3_open() {
-        if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = 'block';
-          overlayBg.style.display = "block";
-        }
+        document.getElementById("mySidebar").style.display = "block";
       }
 
-      // Close the sidebar with the close button
       function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
+        document.getElementById("mySidebar").style.display = "none";
       }
     </script>
     <br><br><br><br><br><br><br><br><br><br>

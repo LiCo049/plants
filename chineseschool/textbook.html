@@ -66,7 +66,7 @@
 
       <table>
         <tr>
-          <td>&nbsp; <img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></td>
+          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>
           <td>
             <h6>Welcome to</h6>
             <h3 class="title-banner"> Nottingham Chinese School</h3>
@@ -78,12 +78,9 @@
   </div>
 
   <!-- Sidebar -->
-  <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5" id="mySidebar">
-    <a href="javascript:void(0)" onclick="w3_close()"
-      class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
     <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html"> Our School </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">
@@ -92,11 +89,11 @@
     <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students award </a>
     <a class="w3-bar-item w3-button w3-hover-blue"
-      href="http://chinese-school.org.uk/thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
+      href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
     <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
     <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
     <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
-  </nav>
+  </div>
 
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -104,8 +101,10 @@
     id="myOverlay"></div>
 
   <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:220px; margin-top: 120px;">
-
+  <div class="w3-main" style="margin-left:220px; margin-top:100px;">
+    <div>
+      <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+    </div>
     <!-- <div class="w3-row w3-padding-64"> -->
     <!-- <div class="w3-threequarter w3-container"> -->
       <div class="w3-container" style="width: 90%;">
@@ -229,6 +228,15 @@
             <td> <img src="images/adobe-pdf-icon.svg" height="30"><a
                 href="download/textbook/07/中文第七册 练习册 B.pdf">《中文》练习册第七册 B</a></td>
           </tr>
+          <tr>
+            <td>八年级</td>
+            <td> <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/textbook/08/中文第八册.pdf">《中文》教材第八册</a>
+            </td>
+            <td> <img src="images/adobe-pdf-icon.svg" height="30"><a
+                href="download/textbook/08/中文第八册练习册A.pdf">《中文》练习册第八册 A</a></td>
+            <td> <img src="images/adobe-pdf-icon.svg" height="30"><a
+                href="download/textbook/08/中文第八册练习册B.pdf">《中文》练习册第八册 B</a></td>
+          </tr>
         </tbody>
 
       </table>
@@ -299,20 +307,13 @@
 
       // Toggle between showing and hiding the sidebar, and add overlay effect
       function w3_open() {
-        if (mySidebar.style.display === 'block') {
-          mySidebar.style.display = 'none';
-          overlayBg.style.display = "none";
-        } else {
-          mySidebar.style.display = 'block';
-          overlayBg.style.display = "block";
-        }
+        document.getElementById("mySidebar").style.display = "block";
       }
 
-      // Close the sidebar with the close button
       function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
+        document.getElementById("mySidebar").style.display = "none";
       }
+
     </script>
 
 </body>
