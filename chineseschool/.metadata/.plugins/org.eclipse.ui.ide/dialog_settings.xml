@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\gitrepos\cielfwfd-COLineUpdate-ws"/>
+			<item value="C:\gitrepos"/>
 			<item value="C:\Users\li.colling\Google Drive\_plants\plants\chineseschool"/>
 		</list>
 	</section>
