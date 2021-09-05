@@ -12,259 +12,292 @@
 
 	<meta name="description" content="{$seo_description}">
 
-    <tc_include file="Public:head" />
+	<tc_include file="Public:head" />
 
 </head>
 
 <body>
 
-<div class="container tc-main">
+	<div class="container tc-main">
 
-<div style="">
+		<div style="">
 
-<img src="__TMPL__Public/assets/images/title.png" class="img-responsive center-block" style="display:block; margin: 0 auto" />
+			<img src="__TMPL__Public/assets/images/title.png" class="img-responsive center-block"
+				style="display:block; margin: 0 auto" />
 
-<h2 class="text-center">Register Form</h2>
+			<h2 class="text-center">Register Form</h2>
 
-<h4 class="text-center">Nottingham Chinese School</h4>
+			<h4 class="text-center">Nottingham Chinese School</h4>
 
-<p style="border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding-top: 10px;"></p>
+			<p style="border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;padding-top: 10px;"></p>
 
-<form onsubmit="return check()" action="{:U('register/add_post')}" method="post" class="form-horizontal form-validate" enctype="multipart/form-data">
+			<form onsubmit="return check()" action="{:U('register/add_post')}" method="post"
+				class="form-horizontal form-validate" enctype="multipart/form-data">
 
-	<div class="control-group">
 
-		<h4 class="text-center">Tip:&nbsp;&nbsp;(<span style="color:red">*</span>) Required Field</h4>
 
-	</div>
+				<div class="control-group" style="margin-left:20%">
 
-	<div class="control-group" style="margin-left:20%">
+					<label class="control-label">Pupil's Name</label>
 
-		<label class="control-label">Pupil's Name</label>
+					<div class="controls">
 
-		<div class="controls">
+						<input type="text" name="english_name" id="outlink_input" value="" placeholder="English"
+							style="width: 350px">
 
-			<input type="text" name="english_name" id="outlink_input" value="" placeholder="English" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">学生姓名</label>
+
+					<div class="controls">
+
+						<input type="text" name="chinese_name" id="" value="" placeholder="输入中文/Chinese"
+							style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Chinese Level<br />中文水平</label>
+
+					<div class="controls">
+
+						<input type="text" name="chinese_level" id="" value="" placeholder="Chinese Level"
+							style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Gender<br />性别</label>
+
+					<div class="controls">
+
+						<input type="radio" name="sex" id="" value="0" placeholder=""
+							checked>&nbsp;Male(男)&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<input type="radio" name="sex" id="" value="1" placeholder="">&nbsp;Female(女)
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Date of Birth<br />出生日期</label>
+
+					<div class="controls">
+
+						<input type="text" name="birth_date" class="js-date" value="{$formget.start_time|default=''}"
+							style="width: 120px;" placeholder="Click Select date ">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Nationality<br />国籍</label>
+
+					<div class="controls">
+
+						<input type="text" name="nationality" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Ancestral City<br />祖籍</label>
+
+					<div class="controls">
+
+						<input type="text" name="ancestral_city" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Sibling:(Name + Class)</label>
+
+					<div class="controls">
+
+						<input type="text" name="sibling" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Home Address:<br />家庭住址</label>
+
+					<div class="controls">
+
+						<input type="text" name="home_address" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Post Code<br />邮编</label>
+
+					<div class="controls">
+
+						<input type="text" name="post_code" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Parents' Names<br />家长姓名</label>
+
+					<div class="controls">
+
+						<input type="text" name="parent_name" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label" style="margin-left: -140px;width: 300px;">Telephone
+						Number(Home/Mobile)<br />电话(座机/手机)</label>
+
+					<div class="controls">
+
+						<input type="text" name="telphone" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Email Address<br />邮箱地址</label>
+
+					<div class="controls">
+
+						<input type="text" name="email" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label" style="margin-left: -150px;width: 310px;">Emergency Contact(name and
+						telephone no)<br />紧急联系人和电话</label>
+
+					<div class="controls">
+
+						<input type="text" name="emergency" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label" style="margin-left: -140px;width: 300px;">Language used at
+						home<br />日常家庭使用语言</label>
+
+					<div class="controls">
+
+						<input type="text" name="daliy" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Doctor's Address and Telephone Number<br />医生的地址和电话</label>
+
+					<div class="controls">
+
+						<input type="text" name="doctor" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">Special demand<br />特殊要求</label>
+
+					<div class="controls">
+
+						<input type="text" name="special" id="" value="" placeholder="" style="width: 350px">
+
+					</div>
+
+				</div>
+
+				<div class="control-group" style="margin-left:30%; width:500px;">
+
+					<input type="checkbox" name="isshow" value="1" style="margin-top:-5px">
+
+					<span>We may publish school photos on the school website, if you do not want your child’s image
+						shown on the school website, please tick the box.<br /> 如不愿孩子的形象放在学校网页,在框里打勾</span>
+
+				</div>
+
+				<div class="control-group" style="margin-left:30%; width:500px;">
+
+					<input type="checkbox" id="isread" style="margin-top:-5px">
+
+					<span style="font-weight:bold;font-size: larger">I read and accept the school <a
+							href="/ourschool.html#procedures" target="_blank">terms and conditions</a>.<br /> 我已阅读并遵守<a
+							href="/ourschool-cn.html#procedures" target="_blank">学校规则</a></span>
+
+				</div>
+
+				<div class="control-group" style="margin-left:20%">
+
+					<label class="control-label">verification code</label>
+
+					<div class="controls">
+
+						<input type="text" id="input_verify" name="verify" placeholder="verify" style="width:252px;">
+
+						<span>{:sp_verifycode_img('length=4&font_size=14&width=100&height=34&charset=2345678&use_noise=1&use_curve=0')}</span>
+
+
+
+					</div>
+
+
+
+				</div>
+
+				<div class="form-actions">
+
+					<button type="submit" class="btn btn-primary js-ajax-submit">Submit</button>
+
+					<a class="btn" href="javascript:history.back(-1);">Back</a>
+
+				</div>
+
+			</form>
 
 		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >学生姓名</label>
-
-		<div class="controls">
-
-			<input type="text" name="chinese_name" id="" value="" placeholder="输入中文/Chinese" style="padding-right:20%;">
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Class<br/>班级</label>
-
-		<div class="controls"  >
-
-			<input type="text" name="class" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Gender<br/>性别</label>
-
-		<div class="controls">
-
-			<input type="radio" name="sex" id="" value="0" placeholder="" checked>&nbsp;Male(男)&nbsp;&nbsp;&nbsp;&nbsp;
-
-			<input type="radio" name="sex" id="" value="1" placeholder="" >&nbsp;Female(女)
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Date of Birth<br/>出生日期</label>
-
-		<div class="controls">
-
-			<input type="text" name="birth_date" class="js-date" value="{$formget.start_time|default=''}" style="width: 120px;"  placeholder="Click Select date " ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">	
-
-		<label class="control-label" >Sibling:(Name + Class)</label>
-
-		<div class="controls">
-
-			<input type="text" name="sibling" id="" value="" placeholder="" style="padding-right:20%;">
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Home Address:<br/>家庭住址</label>
-
-		<div class="controls">
-
-			<input type="text" name="home_address" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Post Code<br/>邮编</label>
-
-		<div class="controls">
-
-			<input type="text" name="post_code" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Parents' Names<br/>家长姓名</label>
-
-		<div class="controls">
-
-			<input type="text" name="parent_name" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" style="margin-left: -140px;width: 300px;">Telephone Number(Home/Mobile)<br/>电话(座机/手机)</label>
-
-		<div class="controls">
-
-			<input type="text" name="telphone" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Email Address<br/>邮箱地址</label>
-
-		<div class="controls">
-
-			<input type="text" name="email" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" style="margin-left: -150px;width: 310px;">Emergency Contact(name and telephone no)<br/>紧急联系人和电话</label>
-
-		<div class="controls">
-
-			<input type="text" name="emergency" id="" value="" placeholder="" style="padding-right:20%;" ><span style="color:red">&nbsp;&nbsp;&nbsp;*</span>
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" style="margin-left: -140px;width: 300px;">Language used at home<br/>日常家庭使用和语言</label>
-
-		<div class="controls">
-
-			<input type="text" name="daliy" id="" value="" placeholder="" style="padding-right:20%;">
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Doctor's Address and Telephone Number<br/>医生的地址和电话</label>
-
-		<div class="controls">
-
-			<input type="text" name="doctor" id="" value="" placeholder="" style="padding-right:20%;">
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:20%">
-
-		<label class="control-label" >Special demand<br/>特殊要求</label>
-
-		<div class="controls">
-
-			<input type="text" name="special" id="" value="" placeholder="" style="padding-right:20%;">
-
-		</div>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:30%; width:500px;">
-
-		<input type="checkbox"  name="isshow" value="1">
-
-		<span >We may publish school photos on the school website, if you do not want your child’s image shown on the school website, please tick the box.<br /> 如不愿孩子的形象放在学校网页,在框里打勾</span>
-
-	</div>
-
-	<div class="control-group" 	style="margin-left:30%; width:500px;">
-
-		<input type="checkbox" id="isread">
-
-		<span>I have read the school handbook and accept the school rules.<br /> 我已阅读学校手册并遵守学校规则</span>
-
-	</div>
-
-	<div class="control-group" style="margin-left:20%">
-
-			<label class="control-label" >verification code</label>
-
-			<div class="controls">
-
-				<input type="text" id="input_verify" name="verify"  placeholder="verify" style="width:252px;" >
-
-				<span >{:sp_verifycode_img('length=4&font_size=14&width=100&height=34&charset=2345678&use_noise=1&use_curve=0')}</span>
-
-			
-
-			</div>
-
-		
-
-	</div>
-
-	<div class="form-actions">
-
-		<button type="submit" class="btn btn-primary js-ajax-submit">{:L('ADD')}</button>
-
-		<a class="btn" href="javascript:history.back(-1);">{:L('BACK')}</a>
-
-	</div>
-
-</form>
-
-</div>
 
 
 
@@ -274,36 +307,107 @@
 
 <script src="__PUBLIC__/js/common.js"></script>
 
-	<script>
+<script>
 
-		setCookie('refersh_time', 0);
+	setCookie('refersh_time', 0);
 
-		function refersh_window() {
+	function refersh_window() {
 
-			var refersh_time = getCookie('refersh_time');
+		var refersh_time = getCookie('refersh_time');
 
-			if (refersh_time == 1) {
+		if (refersh_time == 1) {
 
-				window.location.reload();
-
-			}
+			window.location.reload();
 
 		}
 
-		setInterval(function() {
+	}
 
-			refersh_window()
+	setInterval(function () {
 
-		}, 2000);
+		refersh_window()
 
-		function check(){
-			if($('#isread').is(':checked')){
-				return true;
-			} else {
-				alert('Please read the school handbook and tick the READ box');
-				return false;
-			}
+	}, 2000);
+
+	function check() {
+		$english_name = $('input[name=english_name]').val();
+		$chinese_name = $('input[name=chinese_name]').val();
+		$chinese_level = $('input[name=chinese_level]').val();
+		$birth_date = $('input[name=birth_date]').val();
+		$Nationality = $('input[name=Nationality]').val();
+		$AncestralCity = $('input[name=AncestralCity]').val();
+		$sibling = $('input[name=sibling]').val();
+		$home_address = $('input[name=home_address]').val();
+		$post_code = $('input[name=post_code]').val();
+		$parent_name = $('input[name=parent_name]').val();
+		$telphone = $('input[name=telphone]').val();
+		$email = $('input[name=email]').val();
+		$emergency = $('input[name=emergency]').val();
+		$daliy = $('input[name=daliy]').val();
+		$doctor = $('input[name=doctor]').val();
+		$special = $('input[name=special]').val();
+		$verify = $('input[name=verify]').val();
+
+		//			验证表单各字段不为空
+		if ($english_name == "") {
+			alert('The information of the Pupil\'s Name is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($chinese_name == "") {
+			alert('The information of the Chinese Name is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($chinese_level == "") {
+			alert('The information of the Chinese Level is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($birth_date == "") {
+			alert('The information of the Date of Birth is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($Nationality == "") {
+			alert('The information of the Nationality is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($AncestralCity == "") {
+			alert('The information of the Ancestral City is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($sibling == "") {
+			alert('The information of the Sibling is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($home_address == "") {
+			alert('The information of the Home Address is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($post_code == "") {
+			alert('The information of the Post Code is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($parent_name == "") {
+			alert('The information of the Parents\' Names is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($telphone == "") {
+			alert('The information of the Telephone Numbe is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($email == "") {
+			alert('The information of the Email Address is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($emergency == "") {
+			alert('The information of the Emergency Contact is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($daliy == "") {
+			alert('The information of the Language used at home is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($doctor == "") {
+			alert('The information of the Doctor\'s Address and Telephone Number is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($special == "") {
+			alert('The information of the Special demand is incomplete. Please fill in appropriate content Or N/A！');
+			return false;
+		} else if ($verify == "") {
+			alert('The information of the Verification code is incomplete. Please fill in appropriate content!');
+			return false;
+		} else if ($('#isread').is(':checked')) {
+			return true;
+		} else {
+			alert('Please read the school handbook and tick the READ box');
+			return false;
 		}
-	</script>
 
-</html>	
+	}
+</script>
+
+</html>
