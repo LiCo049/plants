@@ -1,0 +1,32 @@
+        <tr>
+          <td>
+            <h3 class="w3-text-blue">New School Year Starts</h3>
+            <h5 class="fontchinese w3-text-blue">新学年开学 <span class="w3-opacity w3-text-black">&nbsp; &nbsp; September 4,
+                2021</span></h5>
+            <p>Dear All, hope you all had a pleasant summer holiday. </p>
+            <p>First of all, congratulations to the 7 students who participated in the GCSE and A Level exams, all of whom have achieved good A* results! </p>
+            <p>The Chinese School opens on Saturday, the 4th of September.  
+            </p>
+			
+
+            <p>Welcome Wang Huihua Laoshi to join the Chinese school. Ms. Wang is a professional teacher who has 
+			rich teaching experience and Chinese proficiency. Wang Laoshi will replace Chen Yanyin Laoshi to teach Class 7. 
+			We hope to invite Chen Laoshi to come back after the pandemic in the future. 
+			We like to thank Chen Laoshi and Jiang Chao Laoshi who are leaving the school for their opportunities elsewhere. 
+			There are certain changes in the teacher's arrangement, please check <a href=>here.
+            </p>
+            <p>There are still 3 classes for Year 2, and they will be changed to 2 classes if returning to the classroom in the next term. Year 5 will study HSK 3, the content of HSK 3 will greatly improve students' listening and speaking skills. There is only one class for Class 6, the class starts at 2:30, and the textbook of ZHONGWEN 5 is used.</p>
+
+
+            <p class="fontchinese">大家好！ 希望大家都度过了一个愉快的暑假。 </p>
+            <p class="fontchinese">首先祝贺参加GCSE和A Level考试的7名同学，大家都取得了A *的好成绩！</p>
+            <p class="fontchinese">中文学校于周六，9月4号开学。 </p>
+            <p class="fontchinese">
+欢迎王慧华老师加入中文学校。王老师是国内的师范专业的专业老师，有丰富的教学经验和中文水平。王老师将接替陈雁茵老师教Class7。等疫情过去，将来我们再请陈老师回来帮忙。我们感谢离开学校的陈老师和六班的蒋超老师这一年的努力，祝她们工作顺利。老师的安排有一定变化，具体请看这里。https://www.chinese-school.org.uk/ourschool.html#classes。              学校在4月10号举行的朗诵比赛圆满结束，共有24位同学参加。同学们的表现非常优秀，其中16名同学将参加5月2号伯明翰地区的复赛，获胜的同学将代表学校和英国参加第4届全球朗诵比赛的决赛。所有参加我们学校初赛的同学都有英国中文教育促进会的参赛证书和诺丁汉中文学校的参赛证书。
+            </p>
+            <p class="fontchinese">由于我们学校人数众多，难以满足新的COVID指导条件，这个学期我们继续在网上学习。如果有新的变化，比如试行几个班级先回教室上课，我们会及时通知大家。 </p>
+
+         <p class="fontchinese">二年级仍维持3个班，回教室再改成2个班。5年级学习HSK 3的内容，可以提高学生的听说能力。六年现在只有一个班，2:30上课，学中文第五册。 </p>
+
+          </td>
+        </tr>
