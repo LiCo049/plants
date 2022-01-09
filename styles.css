@@ -82,8 +82,20 @@ ol.d {
   list-style-type: lower-alpha;
 }
 
-.ownit{
+.ownit {
   font-weight: bolder;
   color: red;
-
 }
+
+.item {
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  border: 1px solid transparent;
+  margin-right: 10px;
+  margin-bottom: 1px;
+}
+
+/* #index-gallery{ */
+/* width:25%; */
+/* } */

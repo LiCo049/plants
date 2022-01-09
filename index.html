@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 
 <head>
-  <title>Li's Plants Index </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Li's Plants Index</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
@@ -14,75 +14,78 @@
       $("#myInput").on("keyup", function () {
         var value = $(this).val().toLowerCase();
         $("#myTable tr").filter(function () {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
         });
       });
     });
   </script>
 
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
 </head>
 
 <body>
   <!-- Navbar -->
   <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Plant
-        Index</a>
-      <a href="indoors.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Indoor
-        Plants</a>
-      <a href="outdoors.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Outdoor
-        Plants</a>
+      <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Plant Index</a>
+      <a href="indoors.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Indoor Plants</a>
+      <a href="outdoors.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Outdoor Plants</a>
       <a href="herbs.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Herbs</a>
       <a href="succulents.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Succulents</a>
       <a href="wildlife.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Wild Life</a>
       <a href="trees.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Trees/Hedges</a>
       <a href="vegetables.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Vegetables</a>
-      <a href="fungi.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Fungi</a>
+      <a href="fungi.html" class="
+            w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white
+          ">Fungi</a>
 
-      <a href="bitsandbobs.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Bits &
-        Bobs</a>
-
+      <a href="bitsandbobs.html" class="
+            w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white
+          ">Bits & Bobs</a>
     </div>
   </div>
-  <br><br>
+  <br /><br />
 
-  <div class="w3-main" style="margin-left:30px">
-    <div class="w3-main" style="margin-right:30px">
+  <div class="w3-main" style="margin-left: 30px">
+    <div class="w3-main" style="margin-right: 30px">
       <h1 class="w3-text-teal">随见植物</h1>
 
-      <h4>Type something in the input field to search the table for specific notes:</h4>
-      <input id="myInput" type="text" placeholder="Search......">
-      <br><br>
-      <p>Click the Sort Button to sort the table alphabetically, by the column:</p>
+      <h4>
+        Type something in the input field to search the table for specific
+        notes:
+      </h4>
+      <input id="myInput" type="text" placeholder="Search......" />
+      <br /><br />
+      <p>
+        Click the Sort Button to sort the table alphabetically, by the column:
+      </p>
 
       <table class="table" id="myTable">
         <thead>
           <tr>
-            <th>Binomial Name <button onclick="sortTableByBN()"> Sort</button>
+            <th>
+              Binomial Name <button onclick="sortTableByBN()">Sort</button>
             </th>
-            <th>Common Name <button onclick="sortTableByCN()"> Sort</button></th>
-            <th>中文名 <button onclick="sortTableByChN()"> Sort</button></th>
-            <th> 分类<button onclick="sortTableByCategory()"> Sort</button></th>
+            <th>
+              Common Name <button onclick="sortTableByCN()">Sort</button>
+            </th>
+            <th>中文名 <button onclick="sortTableByChN()">Sort</button></th>
+            <th>分类<button onclick="sortTableByCategory()">Sort</button></th>
 
-            <th> 图片</th>
-            <th>Hcm X Scm </th>
-            <th> Flowers</th>
-            <th> 备注 / 光照 土壤 水分 肥料</th>
-
+            <th>图片</th>
+            <th>Hcm X Scm</th>
+            <th>Flowers</th>
+            <th>备注 / 光照 土壤 水分 肥料</th>
           </tr>
         </thead>
         <tbody>
-
           <!--  ===========================   seperator   ===================================== -->
           <!--  ===========================   seperator   ===================================== -->
 
@@ -90,7 +93,743 @@
 
 
           <tr>
-            <td>Lysimachia punctata</td>
+            <td>
+              Clivia
+              <a href="plant-notes/Clivia.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Natal lily</td>
+            <td>君子兰</td>
+            <td>Indoor</td>
+            <td>
+              <a href="plant-notes/Clivia.html">
+                <img src="images/Clivia.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>50cm X 50cm</td>
+            <td>Jun - Aug</td>
+            <td>
+              <div class="ownit">Own it!</div>
+          
+              Natal lily, Clivia miniata, is a fantastic houseplant suitable for a range of indoor situations. It has dark green, strap-shaped leaves, and bears clusters of orange trumpet-shaped blooms with bright yellow anthers, from spring to late-summer.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Crassula ovata
+              <a href="plant-notes/Crassula ovata.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Jade plant</td>
+            <td>翡翠木</td>
+            <td>Indoor</td>
+            <td>
+              <a href="plant-notes/Crassula ovata.html">
+                <img
+                  src="images/Crassula ovata.jpg"
+                  class="thumbnail"
+                  width="60"
+                  height="60"
+                />
+              </a>
+            </td>
+            <td>1.5-2.5m X 1-1.5m</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+          
+             Grow under glass in a loam-based potting compost with added extra grit. Water moderately when in growth, very sparingly when dormant. Apply a balanced liquid fertiliser 2 or 3 times in the growing season.
+            </td>
+          </tr>
+          
+
+
+          <tr>
+            <td>
+              Phalaenopsis
+              <a href="plant-notes/Phalaenopsis.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>orchid</td>
+            <td>蝴蝶兰</td>
+            <td>Indoor</td>
+            <td>
+              <a href="plant-notes/Phalaenopsis.html">
+                <img src="images/Phalaenopsis.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>30cm X 30cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              These orchids have been widely bred to produce many free-flowering and easy-to-grow hybrids. They grow
+              well as houseplants, enjoying the year-round warmth and filtered light in our homes.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Sansevieria trifasciata
+              <a href="plant-notes/Sansevieria trifasciata.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Mother in law's tongue, snake plant </td>
+            <td>虎尾兰</td>
+            <td>Indoor</td>
+            <td>
+              <a href="plant-notes/Sansevieria trifasciata.html">
+                <img src="images/Sansevieria trifasciata.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>1m X 30cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              S. trifasciata is a succulent perennial forming a clump of erect, sword-shaped deep green leaves with pale
+              green transverse bands, with racemes of small, tubular pale green flowers in summer or autumn.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Penstemons
+              <a href="plant-notes/penstemons.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Beard Tongue</td>
+            <td>钓钟柳</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/penstemon.html">
+                <img src="images/penstemon.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>0.5-1m X 0.1-0.5m</td>
+            <td>March to mid-May</td>
+            <td>
+              These elegant easy-to-grow border plants send up spires of tubular flowers in a range of gorgeous colours.
+              From sky blue to rich plum, deep purple to powdery pink, they flower across the summer months, and like a
+              warm, sunny spot.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Erysimum
+              <a href="plant-notes/Erysimum.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Wallflower</td>
+            <td>糖芥属</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Erysimum.html">
+                <img src="images/Erysimum.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>45cm X 50cm</td>
+            <td>March to August</td>
+            <td>
+              'Bowles's Mauve' is a bushy evergreen perennial to 75cm, with narrow, dark grey-green leaves and erect
+              racemes of rich mauve flowers 2cm in width. Shortlisted for the Chelsea Plant of the Centenary for the
+              decade 1973-1982。
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              Galanthus nivalis
+              <a href="plant-notes/Galanthus nivalis.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>common snowdrop</td>
+            <td>雪滴花,雪花莲</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Galanthus nivalis.html">
+                <img src="images/Galanthus nivalis.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>15cm X 10cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              G. nivalis is a perennial to 15cm, with narrow, grey-green leaves and solitary, nodding, fragrant white
+              flowers 2.5cm in length, the inner segments marked with green at the tip.
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              Kniphofia
+              <a href="plant-notes/Kniphofia.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Red-hot poker</td>
+            <td>火炬花</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Kniphofia.html">
+                <img src="images/Kniphofia.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>100cm X 100cm</td>
+            <td>March to November</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              Kniphofia may be evergreen or herbaceous perennials, with linear or strap-shaped leaves and erect stems
+              bearing a dense raceme of tubular, usually pendent flowers.
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              Rosmarinus officinalis
+              <a href="plant-notes/Rosmarinus officinalis.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Rosemary</td>
+            <td>迷迭香</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Rosmarinus officinalis.html">
+                <img src="images/Rosmarinus officinalis.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>100cm X 100cm</td>
+            <td>Mar - May</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              Easy to grow aromatic, evergreen shrub. Prefers poor, well-drained soil and may be used as a formal or
+              informal low hedge which should be trimmed after flowering.
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              Digitalis purpurea
+              <a href="plant-notes/Digitalis purpurea.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>foxglove</td>
+            <td>毛地黄</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Digitalis purpurea.html">
+                <img src="images/Digitalis purpurea.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>1.5m X 45cm</td>
+            <td>May - July</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              D. purpurea is a biennial or short-lived perennial, freely self-sowing, with a rosette of softly hairy,
+              oval leaves and tall, one-sided spires of pendant, tubular, bright rosy-purple flowers 6cm long, spotted
+              within, in summer.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Stachys byzantina
+              <a href="plant-notes/Stachys byzantina.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Lambs' ears</td>
+            <td>绵毛水苏, 羊耳石蚕 </td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Stachys byzantina.html">
+                <img src="images/Stachys byzantina.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>15cm X 60cm</td>
+            <td>Flower Time</td>
+            <td>
+              Lambs’ ears, Stachys byzantina, is a well-known ground-covering perennial, grown for its soft, woolly
+              foliage. Plants are particularly attractive to the solitary wool carder bee, Anthidium manicatum, which
+              cards the fine hairs from the leaves to use as nesting material.
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <td>
+              Ulex europaeus
+              <a href="plant-notes/Ulex europaeus.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>common gorse</td>
+            <td>荆豆</td>
+            <td>分类</td>
+            <td>
+              <a href="plant-notes/Ulex europaeus.html">
+                <img src="images/Ulex europaeus.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>1.5-2.5m X 1.5-2.5m</td>
+            <td>Spring, Winter</td>
+            <td>
+              U. europaeus is a bushy evergreen shrub with very spiny much-branched stems and solitary coconut-scented
+              bright yellow flowers 2cm in length, mainly in winter and spring, followed by slender black seed-pods.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Helleborus niger
+              <a href="plant-notes/Helleborus niger.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Christmas rose</td>
+            <td>黑根铁筷子</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Helleborus niger.html">
+                <img src="images/Helleborus niger.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>45cm X 45cm</td>
+            <td>Spring, Winter</td>
+            <td>
+              H. niger is a semi-evergreen perennial to 30cm, with pedately lobed, leathery, dark green leaves and 1-3
+              pure white or pink-flushed white, bowl-shaped flowers up to 8cm in width.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Aconitum napellus
+              <a href="plant-notes/Aconitum napellus.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Monkshood</td>
+            <td>欧洲乌头</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Aconitum napellus.html">
+                <img src="images/Aconitum napellus.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>1.2m X 50cm</td>
+            <td>June, July</td>
+            <td>
+              A. napellus is an upright tuberous perennial to 1.5m tall, with deeply divided, dark green leaves and tall
+              spires of violet-blue, hooded flowers in mid and late summer.
+            </td>
+          </tr>
+
+
+          <tr>
+            <td>
+              Pyrus communis 'Conference'
+              <a href="plant-notes/Pyrus communis 'Conference'.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>pear 'Conference'</td>
+            <td>西洋梨</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Pyrus communis 'Conference'.html">
+                <img src="images/Pyrus communis ‘Conference’.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>250cm X 250cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              Home-grown pears are far superior in flavour to anything you can
+              buy in the shops. What’s more, a much greater variety of
+              cultivars is available if you grow your own.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Prunus domestica 'Victoria'
+              <a href="plant-notes/Prunus domestica 'Victoria'.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>plum 'Victoria'</td>
+            <td>欧洲李</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Prunus domestica 'Victoria'.html">
+                <img src="images/Prunus domestica 'Victoria'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>250cm X 240cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              Named in honour of the much-loved British queen, Victoria Plum
+              is the UK's favourite plum variety by a mile – and deservedly
+              so!
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Malus domestica 'Braeburn'
+              <a href="plant-notes/Malus domestica 'Braeburn'.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>apple 'Braeburn'</td>
+            <td>苹果</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Malus domestica 'Braeburn'.html">
+                <img src="images/Malus domestica 'Braeburn'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>2.5m X 2.5m</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              Braeburn’ in the most popular dessert apple in the UK.
+              Discovered in New Zealand in 1952, it is named after the orchard
+              where it was first grown. Malus are small to medium-sized
+              deciduous trees with showy flowers in spring and ornamental or
+              edible fruit in autumn; some have good autumn foliage colour
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Vaccinium corymbosum
+              <a href="plant-notes/Vaccinium corymbosum.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Highbush Blueberry</td>
+            <td>蓝莓</td>
+            <td>Tree / Hedge</td>
+            <td>
+              <a href="plant-notes/Vaccinium corymbosum.html">
+                <img src="images/Vaccinium corymbosum.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>1.5m X 1.0m</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              This mid to late season variety produces good crops of
+              deliciously sweet, deep blue berries with a lovely firm texture.
+              The fruits are borne in clusters in late July and August and
+              will often keep longer than many other varieties. Blueberry
+              ‘Bluegold’ is a particularly attractive variety for its white
+              spring flowers, golden autumn foliage and yellow stems in
+              winter. With such good looks it will be equally at home in your
+              shrub borders, as well as the veggie plot or allotment. This
+              Blueberry variety is also self fertile so you won’t need a
+              second plant to pollinate it.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Cornus
+              <a href="plant-notes/Cornus.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>dogwood</td>
+            <td>山茱萸</td>
+            <td>Hedge</td>
+            <td>
+              <a href="plant-notes/Cornus.html">
+                <img src="images/Cornus.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>2-3m X 2-3m</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              To get the best winter stem colour, you’ll need to cut off all
+              of the stems (coppice) annually in early spring, about 5cm (2in)
+              above ground level. Over time the base will form a permanent low
+              framework known as a stool.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Euphorbia pulcherrima
+              <a href="plant-notes/Euphorbia pulcherrima.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>poinsettia</td>
+            <td>一品红，圣诞红</td>
+            <td>Indoor</td>
+            <td>
+              <a href="plant-notes/Euphorbia pulcherrima.html">
+                <img src="images/Euphorbia pulcherrima.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>0.1-0.5m X 0.1-0.5m</td>
+            <td>Flower Time</td>
+            <td>
+              A favoured last-minute present for a forgotten aunt and sadly
+              generally destined for the bin once the season is over. E.
+              pulcherrima is a semi-evergreen shrub with large, bluntly
+              toothed, ovate leaves and tiny yellow flowers with leaf-like
+              bright red bracts, opening in winter。
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Hippeastrum 'Red Lion'
+              <a href="plant-notes/Hippeastrum 'Red Lion'.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Amaryllis 'Red Lion'</td>
+            <td>朱顶红</td>
+            <td>Indoor</td>
+            <td>
+              <a href="plant-notes/Hippeastrum 'Red Lion'.html">
+                <img src="images/Hippeastrum 'Red Lion'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>25-90cm X 30cm</td>
+            <td>Winter to spring</td>
+            <td>
+              <div class="ownit">Own it!</div>
+
+              Hippeastrum, or amaryllis, are most commonly grown as flowering
+              houseplants, and are often given as gifts at Christmas. The
+              bulbous plants hail from South Africa, and bear four to six
+              large flowers on a tall, light green hollow stem.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Narcissus papyraceus 'Ziva'
+              <a href="plant-notes/Narcissus papyraceus 'Ziva'.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Narcissus ‘Paperwhite Ziva’</td>
+            <td>纸白水仙</td>
+            <td>Indoor / Outdoor</td>
+            <td>
+              <a href="plant-notes/Narcissus papyraceus 'Ziva'.html">
+                <img src="images/Narcissus papyraceus 'Ziva'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>40cm X 10cm</td>
+            <td>Winter</td>
+            <td>
+              Highly scented. Will flower natually in spring but can be forced
+              into flower for Christmas.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Phlomis russeliana
+              <a href="plant-notes/Phlomis russeliana.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Turkish sage</td>
+            <td>中文名</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Phlomis russeliana.html">
+                <img src="images/Phlomis russeliana.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>0.5-1m X 0.1-0.5m</td>
+            <td>May to September</td>
+            <td>
+              Spreads well when happy, excellent as weed suppressing ground
+              cover. Divide plants in spring.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Cedrus atlantica
+              <a href="plant-notes/Cedrus atlantica.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Atlas cedar</td>
+            <td>北非雪松</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Cedrus atlantica.html">
+                <img src="images/Cedrus atlantica.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>12m X 8m</td>
+            <td>Flower Time</td>
+            <td>
+              Glauca Group are large evergreen conifers, at first conical,
+              later developing a broad crown, with spreading branches bearing
+              silvery blue-green needles to 2.5cm, long, and ovoid cones to
+              9cm. Variable, and good blue-leaved forms should be sought.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Hydrangea macrophylla
+              <a href="plant-notes/Hydrangea macrophylla.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Mophead hydrangea</td>
+            <td>绣球</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Hydrangea macrophylla.html">
+                <img src="images/Hydrangea macrophylla.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>120cm X 150cm</td>
+            <td>June - October</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              One of the results of a hydrangea's ability to change colour is
+              that identification of a particular variety can be difficult on
+              acidic soil as the plant may change colour completely if planted
+              somewhere else.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Miscanthus sinensis
+              <a href="plant-notes/Miscanthus sinensis.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Chinese Silver Grass</td>
+            <td>中国芒</td>
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Miscanthus sinensis.html">
+                <img src="images/Miscanthus sinensis.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>2m X 1.2cm</td>
+            <td>Flower Time</td>
+            <td>
+              Miscanthus sinensis ‘Malepartus’ is an attractive ornamental
+              grass with fine, arching leaves with a distinctive central white
+              stripe, which take on beautiful orange and red hues in autumn.
+              In summer it bears spectacular red-brown, silky feathery blooms,
+              which appear to glow in the evening light. Quick to establish,
+              it’s perfect for a mixed ornamental border or gravel garden.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Cotinus coggygria
+              <a href="plant-notes/Cotinus coggygria.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>smoke tree</td>
+            <td>黄栌，红叶树、烟树</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Cotinus coggygria.html">
+                <img src="images/Cotinus coggygria.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>5m X 5m</td>
+            <td>Spring -Autumn</td>
+            <td>
+              C. coggygria is a large, bushy, deciduous shrub to 5m, with
+              rounded leaves turning yellow, orange and red in autumn. Large
+              feathery inflorescences are buff at first, later greyish.
+              <br />
+              Propagate by semi-ripe cuttings in summer. Prune if necessary in
+              winter or early spring.
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Acer palmatum
+              <a href="plant-notes/Acer palmatum.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Japanese Maple</td>
+            <td>日本槭（qì ）树 / 鸡爪槭 / 日本红枫</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Acer palmatum.html">
+                <img src="images/Acer palmatum.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>4m * 8m</td>
+            <td>Flower in Spring, Foliage Spring-Autumn</td>
+            <td>
+              A. palmatum is a variable small tree with small, deeply 5 to
+              7-lobed leaves often colouring well in autumn. Small red flowers
+              in spring are followed by winged, red or green fruits
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              Lysimachia punctata
+              <a href="plant-notes/Lysimachia punctata.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
             <td>yellow loosestrife</td>
             <td>毛黄连花</td>
             <td>Outdoor</td>
@@ -102,11 +841,17 @@
             <td>60-90cm X 30-60cm</td>
             <td>Jun - Sep</td>
             <td>
-              The tall stems carry spikes of cheerful, cupped, star shaped, bright yellow flowers sit amongst mid-green
-              leaves.</td>
+              The tall stems carry spikes of cheerful, cupped, star shaped,
+              bright yellow flowers sit amongst mid-green leaves.
+            </td>
           </tr>
           <tr>
-            <td>Nigella damascena</td>
+            <td>
+              Nigella damascena
+              <a href="plant-notes/Nigella damascena.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
             <td>love-in-a-mist</td>
             <td>黑种草</td>
             <td>Outdoor</td>
@@ -118,8 +863,10 @@
             <td>45cm X 25cm</td>
             <td>Jul - Sep</td>
             <td>
-              N. damascena is an upright, bushy annual to 50cm, withfeathery foliage. Pale blue flowers 4cm across
-              areborne in summer followed by decorative, inflated seed capsules </td>
+              N. damascena is an upright, bushy annual to 50cm, withfeathery
+              foliage. Pale blue flowers 4cm across areborne in summer
+              followed by decorative, inflated seed capsules
+            </td>
           </tr>
 
           <tr>
@@ -135,8 +882,11 @@
             <td>60-90cm X 60-90cm</td>
             <td>Summer</td>
             <td>
-              a deciduous tuberousperennial forming a rosette of narrow leaves to 40cm long, with an erect stem to 1.2m
-              tall, bearing a loose spike of highly fragrant, double white flowers 4-6cm long in summer </td>
+              a deciduous tuberousperennial forming a rosette of narrow leaves
+              to 40cm long, with an erect stem to 1.2m tall, bearing a loose
+              spike of highly fragrant, double white flowers 4-6cm long in
+              summer
+            </td>
           </tr>
 
           <tr>
@@ -152,12 +902,10 @@
             <td>50cm X 35cm</td>
             <td>Flower Time</td>
             <td>
-              As with planting, there’s not too much required for the care of calla lilies other than keeping them
-              watered and fertilized.
-
+              As with planting, there’s not too much required for the care of
+              calla lilies other than keeping them watered and fertilized.
             </td>
           </tr>
-
 
           <tr>
             <td>Begonia</td>
@@ -174,7 +922,8 @@
             <td>
               <div class="ownit">Own it!</div>
 
-              It’s a tough, gorgeous plants that works in both sun and shade conditions.
+              It’s a tough, gorgeous plants that works in both sun and shade
+              conditions.
             </td>
           </tr>
           <tr>
@@ -192,7 +941,8 @@
             <td>
               <div class="ownit">Own it!</div>
 
-              Large, shapely scarlet flowers that retain their form, without shattering as they fade
+              Large, shapely scarlet flowers that retain their form, without
+              shattering as they fade
             </td>
           </tr>
 
@@ -211,15 +961,17 @@
             <td>
               <div class="ownit">Own it!</div>
 
-              S. splendens is a compact, upright perennial usually grown as an annual, with oval leaves and dense spikes
-              of tubular scarlet flowers with large red bracts, over a long period in summer and autumn
+              S. splendens is a compact, upright perennial usually grown as an
+              annual, with oval leaves and dense spikes of tubular scarlet
+              flowers with large red bracts, over a long period in summer and
+              autumn
             </td>
           </tr>
           <tr>
             <td>Tagetes patula</td>
             <td>French Marigold</td>
             <td>法国万寿菊</td>
-            <td> Outdoor</td>
+            <td>Outdoor</td>
             <td>
               <a href="plant-notes/Tagetes patula.html">
                 <img src="images/Tagetes patula.jpg" class="thumbnail" width="60" height="60" />
@@ -229,8 +981,9 @@
             <td>Flower Time</td>
             <td>
               <div class="ownit">Own it!</div>
-              Grow in moderately fertile, well-drained soil in full sun. Deadhead regularly to prolong flowering.
-              Water freely in dry spells
+              Grow in moderately fertile, well-drained soil in full sun.
+              Deadhead regularly to prolong flowering. Water freely in dry
+              spells
             </td>
           </tr>
 
@@ -247,7 +1000,8 @@
             <td>10cm X 50cm - 50cm*100cm</td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div>Patio & Container Plants
+              <div class="ownit">Own it!</div>
+              Patio & Container Plants
             </td>
           </tr>
 
@@ -256,26 +1010,32 @@
             <td>Wax plant</td>
             <td>球兰</td>
             <td>Indoor</td>
-            <td> <a href="plant-notes/Hoya carnosa.html">
+            <td>
+              <a href="plant-notes/Hoya carnosa.html">
                 <img src="images/Hoya carnosa.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>45cm X 45cm</td>
             <td>May - Sep</td>
-            <td>球兰花（Hoya
-              carnosa）又名蜡兰、樱兰，石南藤。球兰花为萝藦科球兰属多年生常绿藤本植物。茎肉质，长达7米，节间有气根，攀附力较强。叶对生，厚肉质，全缘，叶脉不明显，近似蜡质，丰厚肥润，给人以充实富裕之感。</td>
+            <td>
+              球兰花（Hoya
+              carnosa）又名蜡兰、樱兰，石南藤。球兰花为萝藦科球兰属多年生常绿藤本植物。茎肉质，长达7米，节间有气根，攀附力较强。叶对生，厚肉质，全缘，叶脉不明显，近似蜡质，丰厚肥润，给人以充实富裕之感。
+            </td>
           </tr>
 
           <tr>
-            <td>Taraxacum officinale agg. </td>
+            <td>Taraxacum officinale agg.</td>
             <td>Dandelion</td>
             <td>蒲公英</td>
             <td>Wild Life</td>
-            <td> <a href="plant-notes/Taraxacum officinale agg..html">
+            <td>
+              <a href="plant-notes/Taraxacum officinale agg..html">
                 <img src="images/Taraxacum officinale agg..jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
+              </a>
+            </td>
             <td></td>
-            <td> </td>
+            <td></td>
+            <td></td>
           </tr>
 
           <tr>
@@ -283,40 +1043,53 @@
             <td>Bracken</td>
             <td>蕨</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Pteridium aquilinum.html">
+            <td>
+              <a href="plant-notes/Pteridium aquilinum.html">
                 <img src="images/Pteridium aquilinum.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>110cm X 140cm</td>
             <td>Flower Time</td>
-            <td>Huge, widespread, ancient. Bracken is thought to be the most common plant in the world and is found on
-              all continents except Antarctica. In the UK, they thrive in woodland.</td>
+            <td>
+              Huge, widespread, ancient. Bracken is thought to be the most
+              common plant in the world and is found on all continents except
+              Antarctica. In the UK, they thrive in woodland.
+            </td>
           </tr>
-
 
           <tr>
             <td>Lavandula angustifolia ‘Hidcote’</td>
             <td>English lavender</td>
             <td>薰衣草</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Lavandula angustifolia ‘Hidcote’.html">
+            <td>
+              <a href="plant-notes/Lavandula angustifolia ‘Hidcote’.html">
                 <img src="images/Lavandula angustifolia ‘Hidcote’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>60cm X 75cm</td>
             <td>July to October</td>
-            <td>Lavandula angustifolia 'Hidcote' AGM is a favourite English variety, famed for its nectar-rich,
-              voilet-purple flower spikes tha tare superb for drying and using to add flavour to biscuits and cakes. It
-              has a neat and bushy habit, makes a wonderful aromatic hedge and thrives in pots on a bright and sunny
-              patio. The flowers are also adored by bees and other pollinating insects. </td>
+            <td>
+              Lavandula angustifolia 'Hidcote' AGM is a favourite English
+              variety, famed for its nectar-rich, voilet-purple flower spikes
+              tha tare superb for drying and using to add flavour to biscuits
+              and cakes. It has a neat and bushy habit, makes a wonderful
+              aromatic hedge and thrives in pots on a bright and sunny patio.
+              The flowers are also adored by bees and other pollinating
+              insects.
+            </td>
           </tr>
 
           <tr>
             <td>Camellia-japonica</td>
-            <td>Camellia japonica, common camellia, Japanese rose </td>
+            <td>Camellia japonica, common camellia, Japanese rose</td>
             <td>山茶花</td>
-            <td> Tree</td>
-            <td> <a href="plant-notes/Camellia-japonica.html">
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Camellia-japonica.html">
                 <img src="images/Camellia-japonica.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>4m X 3m</td>
             <td>Feb - Apr</td>
             <td>
@@ -330,29 +1103,34 @@
             <td>Begonia Marginata</td>
             <td>秋海棠</td>
             <td>Ourdoor</td>
-            <td> <a href="plant-notes/Begonia-Marginata.html">
+            <td>
+              <a href="plant-notes/Begonia-Marginata.html">
                 <img src="images/Begonia-Marginata.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>25cm X 30cm</td>
             <td>June - Sep</td>
             <td>
-              <div class="ownit">Own it!</div> Purchased April 2021.
+              <div class="ownit">Own it!</div>
+              Purchased April 2021.
             </td>
           </tr>
 
-
           <tr>
-            <td> Paeonia-'Coral-Charm' </td>
+            <td>Paeonia-'Coral-Charm'</td>
             <td>Peony 'Coral Sunset'</td>
             <td>芍药</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Paeonia-'Coral-Charm'.html">
+            <td>
+              <a href="plant-notes/Paeonia-'Coral-Charm'.html">
                 <img src="images/Paeonia-'Coral-Charm'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>85cm X 85cm</td>
             <td>late Spring, Summer</td>
             <td>
-              <div class="ownit">Own it!</div> Purchased in April 2021.
+              <div class="ownit">Own it!</div>
+              Purchased in April 2021.
             </td>
           </tr>
 
@@ -361,13 +1139,16 @@
             <td>Japanese Tree Peony 'Taiyo'</td>
             <td>芍药树</td>
             <td>Tree</td>
-            <td> <a href="plant-notes/Paeonia-suffruticosa-'Taiyo'.html">
+            <td>
+              <a href="plant-notes/Paeonia-suffruticosa-'Taiyo'.html">
                 <img src="images/Paeonia-suffruticosa-'Taiyo'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>150cm X 150cm</td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Purchased April 2021. Grows to 150cm in 10-20 years.
+              <div class="ownit">Own it!</div>
+              Purchased April 2021. Grows to 150cm in 10-20 years.
             </td>
           </tr>
 
@@ -376,22 +1157,29 @@
             <td>sweet cicely</td>
             <td>茉莉芹</td>
             <td>Wild Life</td>
-            <td> <a href="plant-notes/Myrrhis-odorata.html">
+            <td>
+              <a href="plant-notes/Myrrhis-odorata.html">
                 <img src="images/Myrrhis-odorata.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>1.2m Height</td>
             <td>Flower Time</td>
-            <td>Aniseed scented perennial with bright green leaves and white flowers</td>
+            <td>
+              Aniseed scented perennial with bright green leaves and white
+              flowers
+            </td>
           </tr>
 
           <tr>
-            <td>Tulipa 'Dordogne' </td>
-            <td>Tulip 'Dordogne' </td>
+            <td>Tulipa 'Dordogne'</td>
+            <td>Tulip 'Dordogne'</td>
             <td>郁金香</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Tulipa-'Dordogne'.html">
+            <td>
+              <a href="plant-notes/Tulipa-'Dordogne'.html">
                 <img src="images/Tulipa-'Dordogne'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>60cm X 15cm</td>
             <td>Late April to May</td>
             <td>Single late tulips.</td>
@@ -402,34 +1190,36 @@
             <td>Hollyhock</td>
             <td>蜀葵</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Alcea-rosea-'Chaters-Double-Mixed'.html">
+            <td>
+              <a href="plant-notes/Alcea-rosea-'Chaters-Double-Mixed'.html">
                 <img src="images/Alcea-rosea-'Chaters-Double-Mixed'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>240cm Height</td>
             <td>Jun-Aug</td>
             <td>
-              <div class="ownit">Own it!</div> Paeony-like double pompon blooms arrayed along the tall, elegant spires
-              in a lovely range of
-              colours.
+              <div class="ownit">Own it!</div>
+              Paeony-like double pompon blooms arrayed along the tall, elegant
+              spires in a lovely range of colours.
             </td>
           </tr>
 
-
           <tr>
-            <td>Phaseolus coccineus 'Enorma' </td>
-            <td>bean (runner) 'Enorma' </td>
+            <td>Phaseolus coccineus 'Enorma'</td>
+            <td>bean (runner) 'Enorma'</td>
             <td>荷包豆, 花豆，大红豆</td>
             <td>Vegetables</td>
-            <td> <a href="plant-notes/Phaseolus-coccineus-'Enorma'.html">
+            <td>
+              <a href="plant-notes/Phaseolus-coccineus-'Enorma'.html">
                 <img src="images/Phaseolus-coccineus-'Enorma'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
+              </a>
+            </td>
+            <td></td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> This runner bean produces some of the longest, most beautiful pods of any
-              British bean plant
-              with
-              a superb flavour to match.
+              <div class="ownit">Own it!</div>
+              This runner bean produces some of the longest, most beautiful
+              pods of any British bean plant with a superb flavour to match.
             </td>
           </tr>
           <tr>
@@ -437,13 +1227,16 @@
             <td>Magnolia</td>
             <td>玉兰</td>
             <td>Tree</td>
-            <td> <a href="plant-notes/Magnolia-stellata.html">
+            <td>
+              <a href="plant-notes/Magnolia-stellata.html">
                 <img src="images/Magnolia-stellata.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>3m X 4m</td>
             <td>Spring</td>
             <td>
               <div class="ownit">Own it!</div>
+              M. stellata is a slow-growing medium-sized deciduous shrub of broadly rounded habit. Leaves narrowly obovate. Flowers white, to 10cm in width, with up to 18 narrowly oblong, spreading white tepals, in early spring
             </td>
           </tr>
 
@@ -452,10 +1245,12 @@
             <td>Common Olive</td>
             <td>橄榄</td>
             <td>Tree/Hedge</td>
-            <td> <a href="plant-notes/Olea-europaea.html">
+            <td>
+              <a href="plant-notes/Olea-europaea.html">
                 <img src="images/Olea-europaea.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
+              </a>
+            </td>
+            <td></td>
             <td>Flower Time</td>
             <td>Notes</td>
           </tr>
@@ -465,17 +1260,17 @@
             <td>Christmas cactus</td>
             <td>蟹爪兰</td>
             <td>Indoor</td>
-            <td> <a href="plant-notes/Schlumbergera.html">
+            <td>
+              <a href="plant-notes/Schlumbergera.html">
                 <img src="images/Schlumbergera.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>40cm X 80cm</td>
             <td>Nov-Jan</td>
             <td>
-              <div class="ownit">Own it!</div> They flower from late November to late January, they give a wonderful
-              Christmas display or are
-              an
-              ideal
-              Christmas gift.
+              <div class="ownit">Own it!</div>
+              They flower from late November to late January, they give a
+              wonderful Christmas display or are an ideal Christmas gift.
             </td>
           </tr>
 
@@ -484,16 +1279,19 @@
             <td>Ivy Leaved Cyclaman</td>
             <td>仙客来</td>
             <td>Indoor, Outdoor</td>
-            <td> <a href="plant-notes/Cyclamen-hederifolium.html">
+            <td>
+              <a href="plant-notes/Cyclamen-hederifolium.html">
                 <img src="images/Cyclamen-hederifolium.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>10-50cm X 10-50cm</td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> C. persicum is a winter or spring-flowering tuber, growing to 10-20cm in
-              height. Heart-shaped,
-              dark-green
-              leaves have silver markings. Fragrant white or pink flowers with petals swept upwards have carmine mouths
+              <div class="ownit">Own it!</div>
+              C. persicum is a winter or spring-flowering tuber, growing to
+              10-20cm in height. Heart-shaped, dark-green leaves have silver
+              markings. Fragrant white or pink flowers with petals swept
+              upwards have carmine mouths
             </td>
           </tr>
 
@@ -501,18 +1299,20 @@
             <td>Delphinium</td>
             <td>Larkspur</td>
             <td>大花飞燕草，高花翠雀</td>
-            <td> Outdoor</td>
-            <td> <a href="plant-notes/Delphinium.html">
+            <td>Outdoor</td>
+            <td>
+              <a href="plant-notes/Delphinium.html">
                 <img src="images/Delphinium.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>1.5-2m High</td>
             <td>Jun-Aug, following year</td>
             <td>
-              <div class="ownit">Own it!</div> Grow plants closely together to help support each other.Renowned for
-              their clear colours and
-              commanding
-              presence, delphiniums are possibly the ultimate early
-              summer perennial and there are plenty of varieties to choose from
+              <div class="ownit">Own it!</div>
+              Grow plants closely together to help support each other.Renowned
+              for their clear colours and commanding presence, delphiniums are
+              possibly the ultimate early summer perennial and there are
+              plenty of varieties to choose from
             </td>
           </tr>
 
@@ -521,9 +1321,11 @@
             <td>Sage</td>
             <td>鼠尾草</td>
             <td>Herb</td>
-            <td> <a href="plant-notes/Salvia.html">
+            <td>
+              <a href="plant-notes/Salvia.html">
                 <img src="images/Salvia.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>45-90cm X 30-90cm</td>
             <td>Flower Time</td>
             <td>
@@ -536,14 +1338,17 @@
             <td>Spider Wort</td>
             <td>紫露草/紫鸭跖草</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Tradescantia-x-andersoniana-'Isis'.html">
+            <td>
+              <a href="plant-notes/Tradescantia-x-andersoniana-'Isis'.html">
                 <img src="images/Tradescantia-x-andersoniana-'Isis'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>30-45cm X 38-45cm</td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Grow in fertile, moist soil in full sun or partial shade. May need
-              staking
+              <div class="ownit">Own it!</div>
+              Grow in fertile, moist soil in full sun or partial shade. May
+              need staking
             </td>
           </tr>
 
@@ -552,9 +1357,11 @@
             <td>Bugloss</td>
             <td>篮蓟属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Echium-webbii.html">
+            <td>
+              <a href="plant-notes/Echium-webbii.html">
                 <img src="images/Echium-webbii.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>1.5m X 75cm</td>
             <td>Flower Time</td>
             <td>Notes</td>
@@ -562,17 +1369,20 @@
 
           <tr>
             <td>x Graptoveria ‘Titubans’</td>
-            <td>Porcelain Plant </td>
+            <td>Porcelain Plant</td>
             <td>白牡丹</td>
             <td>Indoor</td>
-            <td> <a href="plant-notes/x-Graptoveria-‘Titubans’.html">
+            <td>
+              <a href="plant-notes/x-Graptoveria-‘Titubans’.html">
                 <img src="images/x-Graptoveria-‘Titubans’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
+              </a>
+            </td>
+            <td></td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> An easy to grow plant. Looks great in a terrarium or other succulent
-              planter.
+              <div class="ownit">Own it!</div>
+              An easy to grow plant. Looks great in a terrarium or other
+              succulent planter.
             </td>
           </tr>
           <tr>
@@ -580,9 +1390,11 @@
             <td>White Campion</td>
             <td>白花蝇子草</td>
             <td>Wild Life</td>
-            <td> <a href="plant-notes/Silene-latifolia.html">
+            <td>
+              <a href="plant-notes/Silene-latifolia.html">
                 <img src="images/Silene-latifolia.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>up to 1m High</td>
             <td>May to October</td>
             <td>White campion can be found in hedgerows.</td>
@@ -593,34 +1405,38 @@
             <td>Giant Lily Purple Prince</td>
             <td>百合</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Lilium-'Purple-Prince'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Lilium-'Purple-Prince'.html" target="_blank">
                 <img src="images/Lilium-'Purple-Prince'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>2m X 40cm</td>
             <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> 'Purple Prince' is a vigorous, erect, bulbous perennial with sturdy stems
-              bearing whorled,
-              elliptic,
-              glossy, dark green leaves and, in summer, large, fragrant, bowl-shaped, purple to dark magenta flowers
-              with
-              yellow throats.
+              <div class="ownit">Own it!</div>
+              'Purple Prince' is a vigorous, erect, bulbous perennial with
+              sturdy stems bearing whorled, elliptic, glossy, dark green
+              leaves and, in summer, large, fragrant, bowl-shaped, purple to
+              dark magenta flowers with yellow throats.
             </td>
           </tr>
 
           <tr>
             <td>Gladiolus murielae</td>
-            <td>Abyssinian Sword-Lily, Peacock lily, Peacock Orchid </td>
+            <td>Abyssinian Sword-Lily, Peacock lily, Peacock Orchid</td>
             <td>唐菖蒲</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Gladiolus-murielae.html" target="_blank">
+            <td>
+              <a href="plant-notes/Gladiolus-murielae.html" target="_blank">
                 <img src="images/Gladiolus-murielae.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>1m X 40cm</td>
             <td>Aug-Oct</td>
-            <td>The Victorians loved Acidanthera murielae (a cousin of the gladiolus) for cut flowers and it's easy to
-              see
-              why. It has a wonderful scent and lasts brilliantly in the vase.
+            <td>
+              The Victorians loved Acidanthera murielae (a cousin of the
+              gladiolus) for cut flowers and it's easy to see why. It has a
+              wonderful scent and lasts brilliantly in the vase.
             </td>
           </tr>
 
@@ -629,16 +1445,18 @@
             <td>garden anemone</td>
             <td>欧洲银莲花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Anemone-coronaria-De-Caen-Group.html" target="_blank">
+            <td>
+              <a href="plant-notes/Anemone-coronaria-De-Caen-Group.html" target="_blank">
                 <img src="images/Anemone-coronaria-De-Caen-Group.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>25-60cm X 15-22cm</td>
             <td>Spring</td>
             <td>
-              <div class="ownit">Own it!</div> De Caen Group are tuberous perennials with finely-dissected, palmate
-              leaves and red, blue-violet
-              or white
-              flowers which appear from March to April
+              <div class="ownit">Own it!</div>
+              De Caen Group are tuberous perennials with finely-dissected,
+              palmate leaves and red, blue-violet or white flowers which
+              appear from March to April
             </td>
           </tr>
 
@@ -647,12 +1465,17 @@
             <td>Cat's ear, Australian cape weed, California dandelion</td>
             <td>猫儿菊</td>
             <td>Wild Life</td>
-            <td> <a href="plant-notes/Hypochaeris-radicata.html" target="_blank">
+            <td>
+              <a href="plant-notes/Hypochaeris-radicata.html" target="_blank">
                 <img src="images/Hypochaeris-radicata.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>30cm X 30cm</td>
             <td>May-Sep</td>
-            <td>A perennial that makes a good meadow component. Rich yellow flowers and dandelion-like seed heads.</td>
+            <td>
+              A perennial that makes a good meadow component. Rich yellow
+              flowers and dandelion-like seed heads.
+            </td>
           </tr>
 
           <tr>
@@ -660,25 +1483,34 @@
             <td>Shasta Daisies</td>
             <td>大滨菊</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Leucanthemum-superbum-'Crazy-Daisy'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Leucanthemum-superbum-'Crazy-Daisy'.html" target="_blank">
                 <img src="images/Leucanthemum-superbum-'Crazy-Daisy'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>60cm X 45cm</td>
             <td>Jun-Sep</td>
-            <td>The frilly blooms of this shasta daisy are a magnet for pollinators.</td>
+            <td>
+              The frilly blooms of this shasta daisy are a magnet for
+              pollinators.
+            </td>
           </tr>
 
           <tr>
             <td>Coreopsis grandiflora 'Golden Joy'</td>
             <td>tickseed 'Early Sunrise'</td>
-            <td>大花金鸡菊, 大花波斯菊 </td>
+            <td>大花金鸡菊, 大花波斯菊</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Coreopsis-'Golden-Joy'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Coreopsis-'Golden-Joy'.html" target="_blank">
                 <img src="images/Coreopsis-'Golden-Joy'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>45cm X 40cm</td>
             <td>Jun-Sep</td>
-            <td>A compact coreopsis that is ideal for the front of borders. </td>
+            <td>
+              A compact coreopsis that is ideal for the front of borders.
+            </td>
           </tr>
 
           <tr>
@@ -686,18 +1518,18 @@
             <td>Lavender 'Munstead'</td>
             <td>薰衣草</td>
             <td>Herb</td>
-            <td> <a href="plant-notes/Lavandula-angustifolia-'Munstead'.html" target="_blank">
-                <img src="images/Lavandula-angustifolia-'Munstead'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>45cm X 60cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> 'Munstead' is a compact evergreen shrub, to 45cm tall, with narrow,
-              grey-green foliage and
-              spikes
-              of
-              small,
-              highly-fragrant, blue-purple flowers in mid to late summer
+              <a href="plant-notes/Lavandula-angustifolia-'Munstead'.html" target="_blank">
+                <img src="images/Lavandula-angustifolia-'Munstead'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>45cm X 60cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              'Munstead' is a compact evergreen shrub, to 45cm tall, with
+              narrow, grey-green foliage and spikes of small, highly-fragrant,
+              blue-purple flowers in mid to late summer
             </td>
           </tr>
 
@@ -706,46 +1538,54 @@
             <td>red-barked dogwood</td>
             <td>山茱萸</td>
             <td>Hedge</td>
-            <td> <a href="plant-notes/Cornus-alba-L..html" target="_blank">
-                <img src="images/Cornus-alba-L..jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>250cm X 250cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Propagate by hardwood cuttings
+              <a href="plant-notes/Cornus-alba-L..html" target="_blank">
+                <img src="images/Cornus-alba-L..jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>250cm X 250cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Propagate by hardwood cuttings
             </td>
           </tr>
 
           <tr>
             <td>Veronica persica</td>
-            <td>Common Field Speedwell </td>
+            <td>Common Field Speedwell</td>
             <td>阿拉伯婆婆纳</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Veronica-persica.html" target="_blank">
-                <img src="images/Veronica-persica.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Common Field-speedwell can be found in flower every month of the year but
-              is at its peak between
-              June to
-              September.
+              <a href="plant-notes/Veronica-persica.html" target="_blank">
+                <img src="images/Veronica-persica.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td></td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Common Field-speedwell can be found in flower every month of the
+              year but is at its peak between June to September.
             </td>
           </tr>
-
 
           <tr>
             <td>Euphorbia amygdaloides 'robbiae'</td>
             <td>Wood Spurge</td>
             <td>大戟</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Euphorbia-amygdaloides-'robbiae'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Euphorbia-amygdaloides-'robbiae'.html" target="_blank">
                 <img src="images/Euphorbia-amygdaloides-'robbiae'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>70cm X 1m</td>
-            <td> Flower Time</td>
-            <td>Always wear gloves when working with euphorbias. The milky sap is a skin irritant.</td>
+            <td>Flower Time</td>
+            <td>
+              Always wear gloves when working with euphorbias. The milky sap
+              is a skin irritant.
+            </td>
           </tr>
 
           <tr>
@@ -753,11 +1593,13 @@
             <td>Cushion spurge, many coloured spurge</td>
             <td>大戟</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Euphorbia-polychroma.html" target="_blank">
+            <td>
+              <a href="plant-notes/Euphorbia-polychroma.html" target="_blank">
                 <img src="images/Euphorbia-polychroma.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>60cm X 40cm</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>Notes</td>
           </tr>
 
@@ -766,15 +1608,21 @@
             <td>Pelargonium</td>
             <td>天竺葵</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Pelargonium-'Summer-Twist'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Pelargonium-'Summer-Twist'.html" target="_blank">
                 <img src="images/Pelargonium-'Summer-Twist'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>40cm X 40cm</td>
-            <td> Flower Time</td>
-            <td>A brand-new mix of pelargonium geraniums with clusters of flowers in a striking combination of red and
-              white.
-              The delightfully named ’Summer Twist’ will give you a succession of unique blooms from early summer until
-              autumn, making this an essential addition to your garden borders, pots, baskets and balcony displays.</td>
+            <td>Flower Time</td>
+            <td>
+              A brand-new mix of pelargonium geraniums with clusters of
+              flowers in a striking combination of red and white. The
+              delightfully named ’Summer Twist’ will give you a succession of
+              unique blooms from early summer until autumn, making this an
+              essential addition to your garden borders, pots, baskets and
+              balcony displays.
+            </td>
           </tr>
 
           <tr>
@@ -782,14 +1630,19 @@
             <td>Sea Holly</td>
             <td>海滨刺芹</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Eryngium-x-zabelii-‘Big-Blue’.html" target="_blank">
+            <td>
+              <a href="plant-notes/Eryngium-x-zabelii-‘Big-Blue’.html" target="_blank">
                 <img src="images/Eryngium-x-zabelii-‘Big-Blue’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>90cm X 60cm</td>
-            <td> Flower Time</td>
-            <td>Eryngium zabelii ‘Big Blue’ is a versatile perennial that produces large spiky steely-blue flowers that
-              rise
-              above the spiny foliage in summer. Perfect for sunny boarders or containers.</td>
+            <td>Flower Time</td>
+            <td>
+              Eryngium zabelii ‘Big Blue’ is a versatile perennial that
+              produces large spiky steely-blue flowers that rise above the
+              spiny foliage in summer. Perfect for sunny boarders or
+              containers.
+            </td>
           </tr>
 
           <tr>
@@ -797,13 +1650,16 @@
             <td>Nemesia</td>
             <td>中文名</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Nemesia.html" target="_blank">
-                <img src="images/Nemesia.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> s
+              <a href="plant-notes/Nemesia.html" target="_blank">
+                <img src="images/Nemesia.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td></td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              s
             </td>
           </tr>
 
@@ -812,12 +1668,16 @@
             <td>Pitcher Plants</td>
             <td>瓶子草</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Sarracenia.html" target="_blank">
+            <td>
+              <a href="plant-notes/Sarracenia.html" target="_blank">
                 <img src="images/Sarracenia.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> Flower Time</td>
-            <td>Fearsomely efficient flycatchers and easy for beginners to grow</td>
+              </a>
+            </td>
+            <td></td>
+            <td>Flower Time</td>
+            <td>
+              Fearsomely efficient flycatchers and easy for beginners to grow
+            </td>
           </tr>
 
           <tr>
@@ -825,12 +1685,16 @@
             <td>Viola 'Rebecca'</td>
             <td>堇菜属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Viola-'Rebecca'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Viola-'Rebecca'.html" target="_blank">
                 <img src="images/Viola-'Rebecca'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>15cm X 20cm</td>
-            <td> Flower Time</td>
-            <td>The scented flowers, held on long stems, are pale cream with slightly frilly edges flecked with violet.
+            <td>Flower Time</td>
+            <td>
+              The scented flowers, held on long stems, are pale cream with
+              slightly frilly edges flecked with violet.
             </td>
           </tr>
 
@@ -839,12 +1703,17 @@
             <td>Viola 'Nora'</td>
             <td>堇菜属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Viola-'Nora'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Viola-'Nora'.html" target="_blank">
                 <img src="images/Viola-'Nora'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>15cm X 20cm</td>
-            <td> Flower Time</td>
-            <td>An unusual bicolour, with rosy purple upper petals, yellow lower petals and a lovely scent.</td>
+            <td>Flower Time</td>
+            <td>
+              An unusual bicolour, with rosy purple upper petals, yellow lower
+              petals and a lovely scent.
+            </td>
           </tr>
 
           <tr>
@@ -852,14 +1721,18 @@
             <td>Common Name</td>
             <td>堇菜属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Viola-‘Etain’.html" target="_blank">
+            <td>
+              <a href="plant-notes/Viola-‘Etain’.html" target="_blank">
                 <img src="images/Viola-‘Etain’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>15cm X 20cm</td>
-            <td> Flower Time</td>
-            <td>A delightful ‘old-fashioned’ viola with neat rounded petals of a soft creamy-yellow, outlined in soft
-              blue.
-              Very floriferous and highly scented.</td>
+            <td>Flower Time</td>
+            <td>
+              A delightful ‘old-fashioned’ viola with neat rounded petals of a
+              soft creamy-yellow, outlined in soft blue. Very floriferous and
+              highly scented.
+            </td>
           </tr>
 
           <tr>
@@ -867,12 +1740,17 @@
             <td>Viola ‘Victoria’s Blush’</td>
             <td>堇菜属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Viola-cornuta-‘Victoria’s-Blush’.html" target="_blank">
+            <td>
+              <a href="plant-notes/Viola-cornuta-‘Victoria’s-Blush’.html" target="_blank">
                 <img src="images/Viola-cornuta-‘Victoria’s-Blush’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>15cm X 20cm</td>
-            <td> Flower Time</td>
-            <td>This vigorous variety has jaunty, rosy lilac flowers and loves a sunny spot.</td>
+            <td>Flower Time</td>
+            <td>
+              This vigorous variety has jaunty, rosy lilac flowers and loves a
+              sunny spot.
+            </td>
           </tr>
 
           <tr>
@@ -880,13 +1758,16 @@
             <td>Chocolate vine</td>
             <td>五叶木通</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Akebia-quinata.html" target="_blank">
+            <td>
+              <a href="plant-notes/Akebia-quinata.html" target="_blank">
                 <img src="images/Akebia-quinata.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>10m X 2cm</td>
-            <td> Flower Time</td>
-            <td>Can get quite carried away so may need cutting back after flowering. Propagate by layering or summer
-              cuttings.
+            <td>Flower Time</td>
+            <td>
+              Can get quite carried away so may need cutting back after
+              flowering. Propagate by layering or summer cuttings.
             </td>
           </tr>
 
@@ -895,13 +1776,16 @@
             <td>Foxglove</td>
             <td>毛地黄</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Digitalis-x-hybrida-'Pink-Panther'.html" target="_blank">
-                <img src="images/Digitalis-x-hybrida-'Pink-Panther'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>70cm X 40cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Hardy, reliable & will flower year after year.
+              <a href="plant-notes/Digitalis-x-hybrida-'Pink-Panther'.html" target="_blank">
+                <img src="images/Digitalis-x-hybrida-'Pink-Panther'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>70cm X 40cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Hardy, reliable & will flower year after year.
             </td>
           </tr>
 
@@ -910,14 +1794,18 @@
             <td>African Lily</td>
             <td>百子莲</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Agapanthus-africanus-'Twister'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Agapanthus-africanus-'Twister'.html" target="_blank">
                 <img src="images/Agapanthus-africanus-'Twister'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>60cm X 50cm</td>
-            <td> Flower Time</td>
-            <td>Blue and white trumpet-shaped blooms form large, globe-like clusters which are held on strong stems
-              above
-              strap-shaped foliage from July to September. Perfect for planting in pots and excellent as cut flowers.
+            <td>Flower Time</td>
+            <td>
+              Blue and white trumpet-shaped blooms form large, globe-like
+              clusters which are held on strong stems above strap-shaped
+              foliage from July to September. Perfect for planting in pots and
+              excellent as cut flowers.
             </td>
           </tr>
 
@@ -926,14 +1814,17 @@
             <td>Common Name</td>
             <td>淫羊藿属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Epimedium-×-perralchicum-‘Frohnleiten’.html" target="_blank">
+            <td>
+              <a href="plant-notes/Epimedium-×-perralchicum-‘Frohnleiten’.html" target="_blank">
                 <img src="images/Epimedium-×-perralchicum-‘Frohnleiten’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>30cm X 60cm</td>
-            <td> Flower Time</td>
-            <td>Shelter from both cold winds and direct sunshine. Divide plants in autumn. No need to cut back unless
-              leaves
-              looking very tired.</td>
+            <td>Flower Time</td>
+            <td>
+              Shelter from both cold winds and direct sunshine. Divide plants
+              in autumn. No need to cut back unless leaves looking very tired.
+            </td>
           </tr>
 
           <tr>
@@ -941,12 +1832,17 @@
             <td>Fawn lily</td>
             <td>猪牙花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Erythronium-californicum.html" target="_blank">
+            <td>
+              <a href="plant-notes/Erythronium-californicum.html" target="_blank">
                 <img src="images/Erythronium-californicum.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>30cm X 30cm</td>
-            <td> Flower Time</td>
-            <td>Plant bulbs in autumn. Easy to grow but don't let the soil dry out. Divide clumps after flowering.</td>
+            <td>Flower Time</td>
+            <td>
+              Plant bulbs in autumn. Easy to grow but don't let the soil dry
+              out. Divide clumps after flowering.
+            </td>
           </tr>
 
           <tr>
@@ -954,15 +1850,18 @@
             <td>Hosta</td>
             <td>玉簪属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Hosta-‘Barbara-Ann’.html" target="_blank">
-                <img src="images/Hosta-‘Barbara-Ann’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>60cm X 90cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Large leaved variety with a strong white edge. Watch out for slugs and
-              snails - a slug hunt at
-              dusk with a torch and a bucket can be very rewarding.
+              <a href="plant-notes/Hosta-‘Barbara-Ann’.html" target="_blank">
+                <img src="images/Hosta-‘Barbara-Ann’.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>60cm X 90cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Large leaved variety with a strong white edge. Watch out for
+              slugs and snails - a slug hunt at dusk with a torch and a bucket
+              can be very rewarding.
             </td>
           </tr>
 
@@ -971,39 +1870,57 @@
             <td>Bleeding heart, lyre flower, lady-in-a-bath</td>
             <td>中文名</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Lamprocapnos-spectabilis.html" target="_blank">
-                <img src="images/Lamprocapnos-spectabilis.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>60cm X 60cm</td>
-            <td> Flower Time</td>
-            <td>Best inpartial shade. Divide in spring orpropagate from root cuttings in winter.</td>
-          </tr>
-
-          <tr>
-            <td>Magnolia x brooklynensis 'Yellow Bird'</td>
-            <td>Yellow Lily Trees</td>
-            <td>黄玉兰</td>
-            <td>Outdoor</td>
-            <td> <a href="plant-notes/Magnolia-x-brooklynensis-'Yellow-Bird'.html" target="_blank">
-                <img src="images/Magnolia-x-brooklynensis-'Yellow-Bird'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>5m X 3m</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div>
+              <a href="plant-notes/Lamprocapnos-spectabilis.html" target="_blank">
+                <img src="images/Lamprocapnos-spectabilis.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>60cm X 60cm</td>
+            <td>Flower Time</td>
+            <td>
+              Best inpartial shade. Divide in spring orpropagate from root
+              cuttings in winter.
             </td>
           </tr>
+
+
+          <tr>
+            <td>
+              Magnolia × brooklynensis 'Yellow Bird'
+              <a href="plant-notes/Magnolia × brooklynensis 'Yellow Bird'.html">
+                <img src="images/link-icon.png" width="20" height="20" />
+              </a>
+            </td>
+            <td>Yellow Lily Trees</td>
+            <td>黄木兰</td>
+            <td>Tree</td>
+            <td>
+              <a href="plant-notes/Magnolia × brooklynensis 'Yellow Bird'.html">
+                <img src="images/Magnolia × brooklynensis 'Yellow Bird'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>5m X 3m</td>
+            <td>Apr - May</td>
+            <td>
+              <div class="ownit">Own it!</div>
+          
+             'Yellow Bird' _ 'Yellow Bird' is a large, vigorous, conical, deciduous tree with ovate to elliptic, dark green leaves and goblet-shaped, yellow flowers that bloom as the leaves emerge in spring.
+            </td>
+          </tr>
+
 
           <tr>
             <td>Daucus carota 'Chantenay'</td>
             <td>Carrot</td>
             <td>胡萝卜</td>
             <td>Vegetables</td>
-            <td> <a href="plant-notes/Daucus-carota-'Chantenay'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Daucus-carota-'Chantenay'.html" target="_blank">
                 <img src="images/Daucus-carota-'Chantenay'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> Flower Time</td>
+              </a>
+            </td>
+            <td></td>
+            <td>Flower Time</td>
             <td>Notes</td>
           </tr>
 
@@ -1012,11 +1929,13 @@
             <td>Cosmos</td>
             <td>波斯菊</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Cosmos-bipinnatus-'Purity'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Cosmos-bipinnatus-'Purity'.html" target="_blank">
                 <img src="images/Cosmos-bipinnatus-'Purity'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> Flower Time</td>
+              </a>
+            </td>
+            <td></td>
+            <td>Flower Time</td>
             <td>
               <div class="ownit">Own it!</div>
             </td>
@@ -1027,12 +1946,17 @@
             <td>Tulip 'Ballerina'</td>
             <td>郁金香</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Tulipa-'Ballerina'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Tulipa-'Ballerina'.html" target="_blank">
                 <img src="images/Tulipa-'Ballerina'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>45cm X 5cm</td>
-            <td> Flower Time</td>
-            <td>Looks particularly good with Tulipa 'Spring Green' and Tulipa 'Queen of Night'</td>
+            <td>Flower Time</td>
+            <td>
+              Looks particularly good with Tulipa 'Spring Green' and Tulipa
+              'Queen of Night'
+            </td>
           </tr>
 
           <tr>
@@ -1040,11 +1964,13 @@
             <td>Tulip ‘Queen Of Night’</td>
             <td>郁金香</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Tulipa-‘Queen-Of-Night’.html" target="_blank">
+            <td>
+              <a href="plant-notes/Tulipa-‘Queen-Of-Night’.html" target="_blank">
                 <img src="images/Tulipa-‘Queen-Of-Night’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> Flower Time</td>
+              </a>
+            </td>
+            <td></td>
+            <td>Flower Time</td>
             <td>Notes</td>
           </tr>
 
@@ -1053,11 +1979,13 @@
             <td>Tulip 'Spring Green'</td>
             <td>郁金香</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Tulipa-'Spring Green'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Tulipa-'Spring Green'.html" target="_blank">
                 <img src="images/Tulipa-'Spring Green'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td> </td>
-            <td> </td>
+              </a>
+            </td>
+            <td></td>
+            <td></td>
             <td>Notes</td>
           </tr>
 
@@ -1066,16 +1994,19 @@
             <td>Cherry 'Kanzan'</td>
             <td>山樱花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Prunus-'Kanzan'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Prunus-'Kanzan'.html" target="_blank">
                 <img src="images/Prunus-'Kanzan'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>10m X 10cm</td>
-            <td> Flower Time</td>
-            <td>This is a great tree for a medium sized garden: the followers are followed by fresh leaves which are a
-              bronzy
-              colour when young, and turn well in the autumn. Prune in summer if you need to maintain shape. Plant with
-              lots
-              of well rotted compost.</td>
+            <td>Flower Time</td>
+            <td>
+              This is a great tree for a medium sized garden: the followers
+              are followed by fresh leaves which are a bronzy colour when
+              young, and turn well in the autumn. Prune in summer if you need
+              to maintain shape. Plant with lots of well rotted compost.
+            </td>
           </tr>
 
           <tr>
@@ -1083,16 +2014,17 @@
             <td>winter windflower</td>
             <td>银莲花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Anemone-blanda-'Charmer'.html" target="_blank">
-                <img src="images/Anemone-blanda-'Charmer'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>10cm X 20cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Plant tubers in autumn afater soaking them overnight. Good in pots or
-              naturalised under trees
-              and
-              shrubs.
+              <a href="plant-notes/Anemone-blanda-'Charmer'.html" target="_blank">
+                <img src="images/Anemone-blanda-'Charmer'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>10cm X 20cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Plant tubers in autumn afater soaking them overnight. Good in
+              pots or naturalised under trees and shrubs.
             </td>
           </tr>
 
@@ -1101,15 +2033,17 @@
             <td>Primula, Primrose</td>
             <td>报春花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Primula-'Blue-Lace-Mary'.html" target="_blank">
-                <img src="images/Primula-'Blue-Lace-Mary'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>25cm X 20cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Beautiful detailing on petals so best in a pot so more easily seen.
-              Propagate by division in
-              spring.
+              <a href="plant-notes/Primula-'Blue-Lace-Mary'.html" target="_blank">
+                <img src="images/Primula-'Blue-Lace-Mary'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>25cm X 20cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Beautiful detailing on petals so best in a pot so more easily
+              seen. Propagate by division in spring.
             </td>
           </tr>
 
@@ -1118,71 +2052,76 @@
             <td>Common Name</td>
             <td>郁金香</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Tulipa-saxatilis-'Lilac-Wonder'.html" target="_blank">
-                <img src="images/Tulipa-saxatilis-'Lilac-Wonder'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>25cm X 10cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Delightful little species tulip - more reliably perennial than larger
-              varieties. Plant bulbs
-              late
-              autumn.
+              <a href="plant-notes/Tulipa-saxatilis-'Lilac-Wonder'.html" target="_blank">
+                <img src="images/Tulipa-saxatilis-'Lilac-Wonder'.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>25cm X 10cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Delightful little species tulip - more reliably perennial than
+              larger varieties. Plant bulbs late autumn.
             </td>
           </tr>
-
 
           <tr>
             <td>Forsythia × intermedia 'Lynwood Variety'</td>
             <td>Forsythia</td>
             <td>连翘</td>
             <td>Hedge</td>
-            <td> <a href="plant-notes/Forsythia-×-intermedia-'Lynwood-Variety'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Forsythia-×-intermedia-'Lynwood-Variety'.html" target="_blank">
                 <img src="images/Forsythia-×-intermedia-'Lynwood-Variety'.jpg" class="thumbnail" width="60"
                   height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>2.5m X 2.5cm</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> They prefers to be freestyle, not squeezed into small front gardens close
-              to path.
+              <div class="ownit">Own it!</div>
+              They prefers to be freestyle, not squeezed into small front
+              gardens close to path.
             </td>
           </tr>
-
 
           <tr>
             <td>Viola x wittrockiana ‘Matrix Blue Frost’</td>
             <td>Pansy Matrix™ Blue Frost</td>
             <td>大花三色堇, 紫罗兰</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Viola-x-wittrockiana-‘Matrix-Blue-Frost’.html" target="_blank">
+            <td>
+              <a href="plant-notes/Viola-x-wittrockiana-‘Matrix-Blue-Frost’.html" target="_blank">
                 <img src="images/Viola-x-wittrockiana-‘Matrix-Blue-Frost’.jpg" class="thumbnail" width="60"
                   height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>10cm X 10cm</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> There are so many different varieties of winter pansy - and all of them
-              perfect for an early
-              spring
-              container.
+              <div class="ownit">Own it!</div>
+              There are so many different varieties of winter pansy - and all
+              of them perfect for an early spring container.
             </td>
           </tr>
 
-
           <tr>
             <td>Narcissus-‘Tête-à-tête’</td>
-            <td>Daffodil</td>
+            <td>daffodil 'Tête-à-tête'</td>
             <td>黄水仙</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Narcissus-‘Tête-à-tête’.html" target="_blank">
-                <img src="images/Narcissus-‘Tête-à-tête’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>20cm X 5cm</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Reliable and popular dward variety. Excellent in pots, window boxes or en
-              masse in borders.
+              <a href="plant-notes/Narcissus-‘Tête-à-tête’.html" target="_blank">
+                <img src="images/Narcissus-‘Tête-à-tête’.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>20cm X 5cm</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Reliable and popular dward variety. Excellent in pots, window
+              boxes or en masse in borders.
             </td>
           </tr>
 
@@ -1191,56 +2130,68 @@
             <td>Hellebore</td>
             <td>齿叶铁筷子</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Helleborus-argutifolius-'Silver-Lace'.html" target="_blank">
+            <td>
+              <a href="plant-notes/Helleborus-argutifolius-'Silver-Lace'.html" target="_blank">
                 <img src="images/Helleborus-argutifolius-'Silver-Lace'.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>60cm X 40cm</td>
-            <td> Flower Time</td>
-            <td>Evergreen perennial. Cut off old leaves as flowers emerge. Propagate from seed when ripe.</td>
+            <td>Flower Time</td>
+            <td>
+              Evergreen perennial. Cut off old leaves as flowers emerge.
+              Propagate from seed when ripe.
+            </td>
           </tr>
-
 
           <tr>
             <td>Bellis perennis ‘Tasso White’</td>
             <td>Daisy</td>
             <td>雏菊</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Bellis-perennis-‘Tasso-White’.jpg.html" target="_blank">
+            <td>
+              <a href="plant-notes/Bellis-perennis-‘Tasso-White’.jpg.html" target="_blank">
                 <img src="images/Bellis-perennis-‘Tasso-White’.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>10cm X 15cm</td>
-            <td> Flower Time</td>
-            <td>Great plant for winter bedding. Deadhead regularly to prolong flowering. Not great in very cold gardens.
+            <td>Flower Time</td>
+            <td>
+              Great plant for winter bedding. Deadhead regularly to prolong
+              flowering. Not great in very cold gardens.
             </td>
           </tr>
-
 
           <tr>
             <td>Muscari armeniacum</td>
             <td>Grape Hyacinth</td>
             <td>葡萄风信子</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Muscari-armeniacum.html" target="_blank">
-                <img src="images/Muscari-armeniacum-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>H X S</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> Flowers: late March, Apr, May
+              <a href="plant-notes/Muscari-armeniacum.html" target="_blank">
+                <img src="images/Muscari-armeniacum-closeup.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>H X S</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              Flowers: late March, Apr, May
             </td>
           </tr>
 
           <tr>
             <td>Berberis thunbergii</td>
             <td>Japaneses barberry</td>
-            <td>红叶小檗 </td>
+            <td>红叶小檗</td>
             <td>Hedge</td>
-            <td> <a href="plant-notes/Berberis-thunbergii.html" target="_blank">
+            <td>
+              <a href="plant-notes/Berberis-thunbergii.html" target="_blank">
                 <img src="images/Berberis-thunbergii-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
-            <td>Notes </td>
+            <td>Flower Time</td>
+            <td>Notes</td>
           </tr>
 
           <tr>
@@ -1248,44 +2199,52 @@
             <td>Begonia</td>
             <td>秋海棠</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Begonia-Double-White.html" target="_blank">
-                <img src="images/Begonia-Double-White-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>H X S</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> 2021, big pot
+              <a href="plant-notes/Begonia-Double-White.html" target="_blank">
+                <img src="images/Begonia-Double-White-closeup.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>H X S</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              2021, big pot
             </td>
           </tr>
-
 
           <tr>
             <td>Freesia</td>
             <td>Freesia single White</td>
             <td>小苍兰属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Freesia.html" target="_blank">
-                <img src="images/Freesia-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>H X S</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> 2021, big pot
+              <a href="plant-notes/Freesia.html" target="_blank">
+                <img src="images/Freesia-closeup.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>H X S</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              2021, big pot
             </td>
           </tr>
 
           <tr>
             <td>Triteleia laxa 'Queen Fabiola'</td>
             <td>Grassnut, triplet lily, Starflower, Wild Hyacinth</td>
-            <td>中文名 </td>
+            <td>中文名</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Triteleia-laxa-Queen-Fabiola.html" target="_blank">
-                <img src="images/Triteleia-laxa-Queen-Fabiola-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>H X S</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> 2021, big pot
+              <a href="plant-notes/Triteleia-laxa-Queen-Fabiola.html" target="_blank">
+                <img src="images/Triteleia-laxa-Queen-Fabiola-closeup.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>H X S</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              2021, big pot
             </td>
           </tr>
 
@@ -1294,13 +2253,16 @@
             <td>Dahlia 'Lavender Perfection'</td>
             <td>大丽花， 大丽菊</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Dahlia-Decorative-Lavender-Perfection.html" target="_blank">
-                <img src="images/Dahlia-Decorative-Lavender-Perfection.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
-            <td>H X S</td>
-            <td> Flower Time</td>
             <td>
-              <div class="ownit">Own it!</div> 2021, big pot
+              <a href="plant-notes/Dahlia-Decorative-Lavender-Perfection.html" target="_blank">
+                <img src="images/Dahlia-Decorative-Lavender-Perfection.jpg" class="thumbnail" width="60" height="60" />
+              </a>
+            </td>
+            <td>H X S</td>
+            <td>Flower Time</td>
+            <td>
+              <div class="ownit">Own it!</div>
+              2021, big pot
             </td>
           </tr>
 
@@ -1309,27 +2271,30 @@
             <td>Dahlia Mignon</td>
             <td>天竺牡丹， 大丽花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Dahlia-hortensis.html" target="_blank">
+            <td>
+              <a href="plant-notes/Dahlia-hortensis.html" target="_blank">
                 <img src="images/Dahlia-hortensis-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>
               <div class="ownit">Own it!</div>
             </td>
           </tr>
-
 
           <tr>
             <td>Laburnum</td>
             <td>Laburnum， Golden Chain</td>
             <td>毒豆</td>
             <td>Tree</td>
-            <td> <a href="plant-notes/laburnum.html" target="_blank">
+            <td>
+              <a href="plant-notes/laburnum.html" target="_blank">
                 <img src="images/laburnum-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>Notes</td>
           </tr>
 
@@ -1338,25 +2303,28 @@
             <td>African lily</td>
             <td>百子莲属</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/agapanthus.html" target="_blank">
+            <td>
+              <a href="plant-notes/agapanthus.html" target="_blank">
                 <img src="images/agapanthus-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>Notes</td>
           </tr>
-
 
           <tr>
             <td>Jasminum</td>
             <td>Jasmine</td>
             <td>茉莉</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Jasminum.html" target="_blank">
+            <td>
+              <a href="plant-notes/Jasminum.html" target="_blank">
                 <img src="images/Jasminum-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>
               <div class="ownit">Own it!</div>
             </td>
@@ -1367,11 +2335,13 @@
             <td>cone flower, Rudbeckia purpurea</td>
             <td>紫锥花</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/Echinacea-purpurea.html" target="_blank">
+            <td>
+              <a href="plant-notes/Echinacea-purpurea.html" target="_blank">
                 <img src="images/Echinacea-purpurea-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>
               <div class="ownit">Own it!</div>
             </td>
@@ -1382,11 +2352,13 @@
             <td>Forsythia</td>
             <td>连翘</td>
             <td>Hedge</td>
-            <td> <a href="plant-notes/Forsythia.html" target="_blank">
+            <td>
+              <a href="plant-notes/Forsythia.html" target="_blank">
                 <img src="images/Forsythia-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> Flower Time</td>
+            <td>Flower Time</td>
             <td>
               <div class="ownit">Own it!</div>
             </td>
@@ -1397,23 +2369,21 @@
             <td>Lupin</td>
             <td>鲁冰花，羽扇豆</td>
             <td>Outdoor</td>
-            <td> <a href="plant-notes/lupinus.html" target="_blank">
+            <td>
+              <a href="plant-notes/lupinus.html" target="_blank">
                 <img src="images/lupinus-closeup.jpg" class="thumbnail" width="60" height="60" />
-              </a></td>
+              </a>
+            </td>
             <td>H X S</td>
-            <td> May-July</td>
+            <td>May-July</td>
             <td>
               <div class="ownit">Own it!</div>
             </td>
           </tr>
-
         </tbody>
-
       </table>
-
     </div>
   </div>
-
 
   <script>
     function sortTableByBN() {
@@ -1447,7 +2417,6 @@
       }
     }
 
-
     function sortTableByCN() {
       var table, rows, switching, i, x, y, shouldSwitch;
       table = document.getElementById("myTable");
@@ -1459,12 +2428,12 @@ no switching has been done:*/
         switching = false;
         rows = table.rows;
         /*Loop through all table rows (except the
-  first, which contains table headers):*/
+first, which contains table headers):*/
         for (i = 1; i < rows.length - 1; i++) {
           //start by saying there should be no switching:
           shouldSwitch = false;
           /*Get the two elements you want to compare,
-    one from current row and one from the next:*/
+  one from current row and one from the next:*/
           x = rows[i].getElementsByTagName("TD")[1];
           y = rows[i + 1].getElementsByTagName("TD")[1];
           //check if the two rows should switch place:
@@ -1476,13 +2445,12 @@ no switching has been done:*/
         }
         if (shouldSwitch) {
           /*If a switch has been marked, make the switch
-    and mark that a switch has been done:*/
+  and mark that a switch has been done:*/
           rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
           switching = true;
         }
       }
     }
-
 
     function sortTableByChN() {
       var table, rows, switching, i, x, y, shouldSwitch;
@@ -1495,12 +2463,12 @@ no switching has been done:*/
         switching = false;
         rows = table.rows;
         /*Loop through all table rows (except the
-  first, which contains table headers):*/
+first, which contains table headers):*/
         for (i = 1; i < rows.length - 1; i++) {
           //start by saying there should be no switching:
           shouldSwitch = false;
           /*Get the two elements you want to compare,
-    one from current row and one from the next:*/
+  one from current row and one from the next:*/
           x = rows[i].getElementsByTagName("TD")[2];
           y = rows[i + 1].getElementsByTagName("TD")[2];
           //check if the two rows should switch place:
@@ -1512,7 +2480,7 @@ no switching has been done:*/
         }
         if (shouldSwitch) {
           /*If a switch has been marked, make the switch
-    and mark that a switch has been done:*/
+  and mark that a switch has been done:*/
           rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
           switching = true;
         }
@@ -1530,12 +2498,12 @@ no switching has been done:*/
         switching = false;
         rows = table.rows;
         /*Loop through all table rows (except the
-  first, which contains table headers):*/
+first, which contains table headers):*/
         for (i = 1; i < rows.length - 1; i++) {
           //start by saying there should be no switching:
           shouldSwitch = false;
           /*Get the two elements you want to compare,
-    one from current row and one from the next:*/
+  one from current row and one from the next:*/
           x = rows[i].getElementsByTagName("TD")[3];
           y = rows[i + 1].getElementsByTagName("TD")[3];
           //check if the two rows should switch place:
@@ -1547,14 +2515,12 @@ no switching has been done:*/
         }
         if (shouldSwitch) {
           /*If a switch has been marked, make the switch
-    and mark that a switch has been done:*/
+  and mark that a switch has been done:*/
           rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
           switching = true;
         }
       }
     }
-
-
   </script>
 </body>
 
