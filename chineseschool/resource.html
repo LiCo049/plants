@@ -1,373 +1,418 @@
 <html>
 
 <head>
-  <title>Welcome to NCS</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif;
-    }
-
-    div#banner {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #9dc4df;
-      width: 100%;
-    }
-
-    div#banner-content {
-      /* width: 800px; */
-      margin: 0 auto;
-      padding: 10px;
-
-    }
-
-    /* div#main-content {
+    <title>Welcome to NCS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        div#banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #9dc4df;
+            width: 100%;
+        }
+        
+        div#banner-content {
+            /* width: 800px; */
+            margin: 0 auto;
+            padding: 10px;
+        }
+        /* div#main-content {
             padding-top: 103px;
         } */
-  </style>
+    </style>
 
 
 </head>
 
 <body>
 
-  <div class="w3-top">
+    <div class="w3-top">
 
-    <div id="banner">
+        <div id="banner">
 
-      <table>
-        <tr>
-          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>    <td>
-            <h6>Welcome to</h6>
-            <h3 class="title-banner"> Nottingham Chinese School</h3>
-          </td>
-        </tr>
-      </table>
+            <table>
+                <tr>
+                    <td>&nbsp;
+                        <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a>
+                    </td>
+                    <td>
+                        <h6>Welcome to</h6>
+                        <h3 class="title-banner"> Nottingham Chinese School</h3>
+                    </td>
+                </tr>
+            </table>
 
+        </div>
     </div>
-  </div>
 
-  <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
 
-    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
       Our School
     </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">Textbooks </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="audio.html">Audio Files</a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">
-      <currentmenu>Other Resources </currentmenu>
-    </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
-    <a class="w3-bar-item w3-button w3-hover-blue"
-      href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
-    <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
-    <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
-  </div>
-
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
-
-  <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:220px; margin-top: 100px;">
-    <div>
-      <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">Textbooks </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="audio.html">Audio Files</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">
+            <currentmenu>Other Resources </currentmenu>
+        </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="job.html">Job Vacancies </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions / 招生 </a>
+        <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
+        <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
     </div>
-    <!-- <div class="w3-row w3-padding-64"> -->
-    <div class="w3-container" style="width: 95%;">
-      <!-- Scrolling text is defined here  -->
 
 
-      <h3 class="w3-text-teal">常用资源</h3>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-      Commonly used Chinese Characters Worksheets can be found below, hover on the image to see what they are like. Feel free to download the PDF documents and print out as required. 下面是常见的汉字练习纸，在图片上悬停鼠标看大图，如有需要请下载PDF文档并打印。
-<br><br>
-      <table class="resourcetable ">
+    <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:220px; margin-top: 100px;">
+        <div>
+            <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+        </div>
+        <!-- <div class="w3-row w3-padding-64"> -->
+        <div class="w3-container" style="width: 95%;">
+            <!-- Scrolling text is defined here  -->
 
-        <!-- Line 1 -->
-        <!------ New Line ------>
-        <tr>
-          <td>
-            <img src="images/田字格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
-            <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/田字格.pdf">田字格</a>
-          </td>
-          <td> <img src="images/米字格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
-            <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/米字格.pdf">米字格</a>
-          </td>
-          <td> <img src="images/田字格加拼音.PNG" class="thumbnail" width="60" height="60" /><br> <br>
-            <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/田字格加拼音.pdf">田字格加拼音</a>
-          </td>
-          <td> <img src="images/小字方格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
-            <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/小字方格.pdf">小字方格</a>
-          </td>
-          <td> <img src="images/作文格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
-            <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/作文格.pdf">作文格</a>
-          </td>
-        </tr>
-      </table>
-      <br>
-      <br>
-      <br>
-      <br>
 
-      <h3 class="w3-text-teal">Quizlet 链接</h3>
-      To assist Chinese learning, the following quizlet sets/classes have been created.  <br>
-     <i> 'WIP' stands for 'Work In Progress', (开发中...) </i>
-      <br><br>
-      <table>
-        <tr>
-          <td><a href="https://quizlet.com/join/HeagyCjP5" target="_blank"><img src="images/quizlet.png" 
-        height="30" />Pinyin - 汉语拼音组合</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/99491153/sets" target="_blank">Folder /
+            <h3 class="w3-text-teal">常用资源</h3>
+
+            Commonly used Chinese Characters Worksheets can be found below, hover on the image to see what they are like. Feel free to download the PDF documents and print out as required. 下面是常见的汉字练习纸，在图片上悬停鼠标看大图，如有需要请下载PDF文档并打印。
+            <br><br>
+            <table class="resourcetable ">
+
+                <!-- Line 1 -->
+                <!------ New Line ------>
+                <tr>
+                    <td>
+                        <img src="images/田字格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
+                        <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/田字格.pdf">田字格</a>
+                    </td>
+                    <td> <img src="images/米字格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
+                        <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/米字格.pdf">米字格</a>
+                    </td>
+                    <td> <img src="images/田字格加拼音.PNG" class="thumbnail" width="60" height="60" /><br> <br>
+                        <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/田字格加拼音.pdf">田字格加拼音</a>
+                    </td>
+                    <td> <img src="images/小字方格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
+                        <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/小字方格.pdf">小字方格</a>
+                    </td>
+                    <td> <img src="images/作文格.PNG" class="thumbnail" width="60" height="60" /><br> <br>
+                        <img src="images/adobe-pdf-icon.svg" height="30"><a href="download/resource/作文格.pdf">作文格</a>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <h3 class="w3-text-teal">Quizlet 链接</h3>
+            To assist Chinese learning, the following quizlet sets/classes have been created. <br>
+            <i> 'WIP' stands for 'Work In Progress', (开发中...) </i>
+            <br><br>
+            <table>
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/HeagyCjP5" target="_blank"><img src="images/quizlet.png" height="30" />Pinyin - 汉语拼音组合</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/99491153/sets" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/HeagyCjP5" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
-        <tr>
-          <td><a href="https://quizlet.com/join/zcSetyK2B" target="_blank"><img src="images/quizlet.png" height="30" />中文第一册 </a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/30842293?x=1xqt&i=uyedt" target="_blank">Folder /
+                    <td><a href="https://quizlet.com/join/HeagyCjP5" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/zcSetyK2B" target="_blank"><img src="images/quizlet.png" height="30" />中文第一册 </a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/30842293?x=1xqt&i=uyedt" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/zcSetyK2B" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                    <td><a href="https://quizlet.com/join/zcSetyK2B" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td><a href="https://quizlet.com/join/kQkPamZxg" target="_blank"></a><img src="images/quizlet.png" height="30" />中文第二册</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/31886883/sets" target="_blank">Folder /
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/kQkPamZxg" target="_blank"></a><img src="images/quizlet.png" height="30" />中文第二册</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/31886883/sets" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/kQkPamZxg" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                    <td><a href="https://quizlet.com/join/kQkPamZxg" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td><a href="https://quizlet.com/join/mmBtFdQKF" target="_blank"><img src="images/quizlet.png" height="30" />中文第三册</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/30753300/sets" target="_blank">Folder /
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/mmBtFdQKF" target="_blank"><img src="images/quizlet.png" height="30" />中文第三册</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/30753300/sets" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/mmBtFdQKF" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                    <td><a href="https://quizlet.com/join/mmBtFdQKF" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td><a href="https://quizlet.com/join/8dJvm6J2b" target="_blank"><img src="images/quizlet.png" height="30" />中文第四册</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/30753278/sets" target="_blank">Folder /
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/8dJvm6J2b" target="_blank"><img src="images/quizlet.png" height="30" />中文第四册</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/30753278/sets" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/8dJvm6J2b" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                    <td><a href="https://quizlet.com/join/8dJvm6J2b" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td><a href="https://quizlet.com/join/K75tfa3Rn" target="_blank"><img src="images/quizlet.png" height="30" />中文第五册</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/66946514/sets" target="_blank">Folder /
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/K75tfa3Rn" target="_blank"><img src="images/quizlet.png" height="30" />中文第五册</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/66946514/sets" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/K75tfa3Rn" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                    <td><a href="https://quizlet.com/join/K75tfa3Rn" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td><a href="https://quizlet.com/join/3a7HqK6fM" target="_blank"><img src="images/quizlet.png" height="30" />中文第六册</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/66946522/sets" target="_blank">Folder /
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/3a7HqK6fM" target="_blank"><img src="images/quizlet.png" height="30" />中文第六册</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/66946522/sets" target="_blank">Folder /
               查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/3a7HqK6fM" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                    <td><a href="https://quizlet.com/join/3a7HqK6fM" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td><a href="https://quizlet.com/join/yYJCvqdW8" target="_blank"><img src="images/quizlet.png" height="30" />中文第七册</a></td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/66946525/sets" target="_blank">Folder / 查看文件夹</a></td>
-          <td><a href="https://quizlet.com/join/yYJCvqdW8" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
+                <tr>
+                    <td>
+                        <a href="https://quizlet.com/join/yYJCvqdW8" target="_blank"><img src="images/quizlet.png" height="30" />中文第七册</a>
+                    </td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/66946525/sets" target="_blank">Folder / 查看文件夹</a></td>
+                    <td><a href="https://quizlet.com/join/yYJCvqdW8" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />HSK 1 (WIP)</td>
-          <td></td>
-          <td></td>
-        </tr>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />HSK 1 (WIP)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />HSK 2 (WIP)</td>
-          <td></td>
-          <td></td>
-        </tr>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />HSK 2 (WIP)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />HSK 3</td>
-          <td><a href="https://quizlet.com/yeli_chinese/folders/hsk-3-folder/sets" target="_blank">Folder / 查看文件夹</a>
-          </td>
-          <td><a href="https://quizlet.com/join/W5SKJg9hE" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
-
-
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />四五快读 第一册</td>
-          <!-- <td><a href="#" target="_blank">Folder / 查看文件夹</a> </td> -->
-          <td></td>
-          <td><a href="https://quizlet.com/join/urxjM5Hy2" target="_blank">Join Class / 加入班级</a></td>
-
-        </tr>
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />四五快读 第二册 (WIP)</td>
-          <td></td>
-          <td><a href="https://quizlet.com/join/J9fEpjhXt" target="_blank">Join Class / 加入班级</a></td>
-        </tr>
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />四五快读 第三册 (WIP)</td>
-          <!-- <td><a href="#" target="_blank">Folder / 查看文件夹</a> </td>
-          <td><a href="#" target="_blank">Join Class / 加入班级</a></td> -->
-        </tr>
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />四五快读 第四册 (WIP)</td>
-          <!-- <td><a href="#" target="_blank">Folder / 查看文件夹</a> </td>
-          <td><a href="#" target="_blank">Join Class / 加入班级</a></td> -->
-        </tr>
-        <tr>
-          <td><img src="images/quizlet.png" height="30" />四五快读 第五册 (WIP)</td>
-          <!-- <td><a href="#" target="_blank">Folder / 查看文件夹</a> </td>
-          <td><a href="#" target="_blank">Join Class / 加入班级</a></td> -->
-        </tr>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />HSK 3</td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/hsk-3-folder/sets" target="_blank">Folder / 查看文件夹</a>
+                    </td>
+                    <td><a href="https://quizlet.com/join/W5SKJg9hE" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
 
 
-      </table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
-      <p> If you have any queries or would like new study sets to be created, please <a
-          href="mailto:NottinghamChineseSchool@live.co.uk?cc=yeli.chineseschool@gmail.com&subject=Quizlet Query">
-          <img src="images/icon-email-512.webp" height=40><u>email us.</u>
-        </a></p>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />四五快读 第一册</td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/01-folder/sets" target="_blank">Folder / 查看文件夹</a> </td>
+                    <td><a href="https://quizlet.com/join/urxjM5Hy2" target="_blank">Join Class / 加入班级</a></td>
 
-      <!-- <a
+                </tr>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />四五快读 第二册</td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/02-folder/sets" target="_blank">Folder / 查看文件夹</a> </td>
+                    <td><a href="https://quizlet.com/join/J9fEpjhXt" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />四五快读 第三册</td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/03-folder/sets" target="_blank">Folder / 查看文件夹</a> </td>
+                    <td><a href="https://quizlet.com/join/7vYQMtbxs" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
+                <tr>
+                    <td><img src="images/quizlet.png" height="30" />四五快读 第四册 (WIP)</td>
+                    <td><a href="https://quizlet.com/yeli_chinese/folders/04-folder/sets" target="_blank">Folder / 查看文件夹</a> </td>
+                    <td><a href="https://quizlet.com/join/WPx2ZnhVX" target="_blank">Join Class / 加入班级</a></td>
+                </tr>
+
+
+            </table>
+
+            <p> If you have any queries or would like new study sets to be created, please
+                <a href="mailto:NottinghamChineseSchool@live.co.uk?cc=yeli.chineseschool@gmail.com&subject=Quizlet Query">
+                    <img src="images/icon-email-512.webp" height=40><u>email us.</u>
+                </a>
+            </p>
+
+            <!-- <a
         href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News">Email
         Us</a> -->
 
-      <br><br>
-      <h3 class="w3-text-teal">Knowledge about China / 三常知识</h3>
-      <table>
-        <tr>
-          <td>
-            <a href="download/resource/中国历史常识.pdf"><img src="images/adobe-pdf-icon.svg" height="30">中国历史常识
-              &nbsp;Knowledge about Chinese History</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="download/resource/中国地理常识.pdf"><img src="images/adobe-pdf-icon.svg" height="30">中国地理常识
-              &nbsp;Knowledge about Chinese Geography</a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="download/resource/中国文化常识.pdf"><img src="images/adobe-pdf-icon.svg" height="30">中国文化常识
-              &nbsp;Knowledge about Chinese Culture</a>
-          </td>
-        </tr>
+            <br><br>
+            <h3 class="w3-text-teal">Knowledge about China / 三常知识</h3>
+            <table>
+                <tr>
+                    <td>
+                        <a href="download/resource/中国历史常识.pdf"><img src="images/adobe-pdf-icon.svg" height="30">中国历史常识 &nbsp;Knowledge about Chinese History</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="download/resource/中国地理常识.pdf"><img src="images/adobe-pdf-icon.svg" height="30">中国地理常识 &nbsp;Knowledge about Chinese Geography</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="download/resource/中国文化常识.pdf"><img src="images/adobe-pdf-icon.svg" height="30">中国文化常识 &nbsp;Knowledge about Chinese Culture</a>
+                    </td>
+                </tr>
 
-      </table>
+            </table>
 
 
-      <br><br>
-      <h3 class="w3-text-teal">其他网站链接</h3>
-      <table>
+            <br><br>
+            <h3 class="w3-text-teal">其他网站链接</h3>
+            <table>
 
 
-        <tr>
-          <td><a href="http://www.hwjyw.com/index.shtml" target="_blank"><img src="images/中国华文教育网.png" height="30"></a>
-          </td>
-          <td></td>
-          <td> 中国华文教育网</td>
+                <tr>
+                    <td>
+                        <a href="http://www.hwjyw.com/index.shtml" target="_blank"><img src="images/中国华文教育网.png" height="30"></a>
+                    </td>
+                    <td></td>
+                    <td> 中国华文教育网</td>
 
-        </tr>
-        <tr>
-          <td><a href="https://www.hanzi5.com/" target="_blank"><img src="images/汉字屋.PNG" height="30" />
-          </td>
-          <td></td>
-          <td>汉字屋 - 汉字笔顺动画在线查询网站</td>
-        </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="https://www.hanzi5.com/" target="_blank"><img src="images/汉字屋.PNG" height="30" />
+                    </td>
+                    <td></td>
+                    <td>汉字屋 - 汉字笔顺动画在线查询网站</td>
+                </tr>
 
-        <tr>
-          <td><a href="http://xh.5156edu.com/bs.html" target="_blank"><img src="images/在线汉语字典.jpg" height="30" />
-          </td>
-          <td></td>
-          <td>在线汉语字典 - 按部首/拼音查字 Online Dictionary <td>
-        </tr>
+                <tr>
+                    <td>
+                        <a href="http://xh.5156edu.com/bs.html" target="_blank"><img src="images/在线汉语字典.jpg" height="30" />
+                    </td>
+                    <td></td>
+                    <td>在线汉语字典 - 按部首/拼音查字 Online Dictionary
+                        <td>
+                </tr>
 
-        <tr>
-          <td><a href="https://dictionary.writtenchinese.com/" target="_blank"><img src="images/writtenchinese.png"
-                height="30" />
-          </td>
-          <td></td>
-          <td> Chinese Dictionary: Practice Writing &amp; Character Memorization by Inputting English,
-            Pinyin, Or Chinese!</td>
-        </tr>
+                <tr>
+                    <td>
+                        <a href="https://dictionary.writtenchinese.com/" target="_blank"><img src="images/writtenchinese.png" height="30" />
+                    </td>
+                    <td></td>
+                    <td> Chinese Dictionary: Practice Writing &amp; Character Memorization by Inputting English, Pinyin, Or Chinese!</td>
+                </tr>
 
-        <tr>
-          <td><a href="https://resources.allsetlearning.com/chinese/grammar/HSK_3_grammar_points" target="_blank"><img
-                src="images/chinesegrammarwiki.png" height="30"></a></td>
-          <td></td>
-          <td> Chinese Grammar Wiki HSK 3 points</td>
+                <tr>
+                    <td>
+                        <a href="https://resources.allsetlearning.com/chinese/grammar/HSK_3_grammar_points" target="_blank"><img src="images/chinesegrammarwiki.png" height="30"></a>
+                    </td>
+                    <td></td>
+                    <td> Chinese Grammar Wiki HSK 3 points</td>
 
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-
-
-      </table>
-
-
-      <br>
-      <br>
-      <br>
-      <br>
-
-    </div>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
 
 
-    <!-- END MAIN -->
+            </table>
 
 
-    <script>
-      // Get the Sidebar
-      var mySidebar = document.getElementById("mySidebar");
+            <br>
+            <br>
+            <br>
+            <br>
 
-      // Get the DIV with overlay effect
-      var overlayBg = document.getElementById("myOverlay");
+        </div>
 
-      // Toggle between showing and hiding the sidebar, and add overlay effect
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
 
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
+        <!-- END MAIN -->
 
-    </script>
+
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
+
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
+
+            // Toggle between showing and hiding the sidebar, and add overlay effect
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
 
 </body>
 

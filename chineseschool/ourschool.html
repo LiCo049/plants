@@ -1,467 +1,450 @@
 <html>
 
 <head>
-  <title>Welcome to NCS</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    html,
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Roboto", sans-serif;
-    }
-
-    div#banner {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #9dc4df;
-      width: 100%;
-    }
-
-    div#banner-content {
-      /* width: 800px; */
-      margin: 0 auto;
-      padding: 10px;
-
-    }
-  </style>
+    <title>Welcome to NCS</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html,
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Roboto", sans-serif;
+        }
+        
+        div#banner {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #9dc4df;
+            width: 100%;
+        }
+        
+        div#banner-content {
+            /* width: 800px; */
+            margin: 0 auto;
+            padding: 10px;
+        }
+    </style>
 
 
 </head>
 
 <body>
 
-  <div class="w3-top">
+    <div class="w3-top">
 
-    <div id="banner">
-      <table>
-        <tr>
-          <td>&nbsp; <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a></td>
-          <td>
-          <td>
-            <!-- <h6>Welcome to</h6> -->
-            <h3 class="title-banner"> &nbsp;&nbsp; Nottingham Chinese School</h3>
-            <!-- Right-sided navbar links -->
-            <div class="w3-right w3-hide-small">
-              <a href="#aboutus" class="w3-bar-item w3-button w3-medium w3-hover-green">About Us</a>
-              <a href="#committee" class="w3-bar-item w3-button w3-medium w3-hover-green">Committee</a>
-              <a href="#calendar" class="w3-bar-item w3-button w3-medium w3-hover-green">School Calendar</a>
-              <a href="#classes" class="w3-bar-item w3-button w3-medium w3-hover-green">Classes</a>
-              <a href="#procedures" class="w3-bar-item w3-button w3-medium w3-hover-green"> Key Procedures</a>
-              <a href=""><img src="images/icon-eng.png" height="30"></a> <a href="ourschool-cn.html"><img
-                  src="images/icon-ch.png" height="30"></a>
+        <div id="banner">
+            <table>
+                <tr>
+                    <td>&nbsp;
+                        <a href="index.html"><img src="images/ChineseSchool.jpg" height="100" alt="School Logo"></a>
+                    </td>
+                    <td>
+                        <td>
+                            <!-- <h6>Welcome to</h6> -->
+                            <h3 class="title-banner"> &nbsp;&nbsp; Nottingham Chinese School</h3>
+                            <!-- Right-sided navbar links -->
+                            <div class="w3-right w3-hide-small">
+                                <a href="#aboutus" class="w3-bar-item w3-button w3-medium w3-hover-green">About Us</a>
+                                <a href="#committee" class="w3-bar-item w3-button w3-medium w3-hover-green">Committee</a>
+                                <a href="#calendar" class="w3-bar-item w3-button w3-medium w3-hover-green">School Calendar</a>
+                                <a href="#classes" class="w3-bar-item w3-button w3-medium w3-hover-green">Classes</a>
+                                <a href="#procedures" class="w3-bar-item w3-button w3-medium w3-hover-green"> Key Procedures</a>
+                                <a href=""><img src="images/icon-eng.png" height="30"></a>
+                                <a href="ourschool-cn.html"><img src="images/icon-ch.png" height="30"></a>
 
-            </div>
-          </td>
-        </tr>
-      </table>
+                            </div>
+                        </td>
+                </tr>
+            </table>
 
+        </div>
     </div>
-  </div>
 
-  <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
 
-    <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
-      <currentmenu>Our School</currentmenu>
-    </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">Textbooks </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="audio.html">Audio Files</a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions /
+        <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="index.html">News</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="ourschool.html">
+            <currentmenu>Our School</currentmenu>
+        </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="textbook.html">Textbooks </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="audio.html">Audio Files</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="resource.html">Other Resources </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="award.html">Best Students Award </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="job.html">Job Vacancies </a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="thinkcmfx/index.php?g=Portal&m=Register&a=index">Admissions /
       招生 </a>
-    <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
-    <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
-    <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
-  </div>
-
-
-  <!-- Overlay effect when opening sidebar on small screens -->
-  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
-    id="myOverlay"></div>
-
-  <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
-  <div class="w3-main" style="margin-left:220px; margin-top: 90px;">
-    <div>
-      <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+        <!-- <a class="w3-bar-item w3-button w3-hover-blue" href="teacherszone.html">Teacher’s Zone </a> -->
+        <a class="w3-bar-item w3-button w3-hover-blue" href="gallery.html">Gallery</a>
+        <a class="w3-bar-item w3-button w3-hover-blue" href="contactus.html">Contact Us </a>
     </div>
 
 
-    <!-- <div class="w3-row w3-padding-64"> -->
-    <div class="w3-container" style="width: 95%;">
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-      <h2 class="w3-text-blue" id="aboutus" style="padding-top: 120px;">About Us</h2>
-
-      <p>Nottingham Chinese School was founded in 1999. In 2020 there were more than 300 pupils in 17 classes.
-        The teaching is based on textbooks specially designed for overseas students (ages 4.5-18)
-        studying Chinese. The teaching covers from beginners to GCSE and A level Chinese.
-      </p>
-      <p>
-        Nottingham Chinese School runs on Saturday afternoons, from 12:15 to 14:15, or from 14:30 to 16:30 for language
-        classes.
-        Activity classes (such as dancing, painting, musical instrument and caligraphy) run from 13:30 to 14:30, or
-        14:30 to 15:30.
-
-      </p>
-      <p>Nottingham Chinese School is located at the Alderman White School, Chilwell Lane,
-        Bramcote, NG9 3DU, Nottingham.
-
-      </p>
-
-      <br>
-      <p>Quote from County Council Inspection Report 2007:</p>
-      <p class="p3">
-        "... Lessons are well-strcutured with pupils focused and engaged ... Descipline is good, as is
-        support from parents adn of course the Management Committee. This is a well run school with lots of
-        innovation and a desire to continually improve ..."</p>
-      <br>
-
-      <h2 class="w3-text-blue">School History</h2>
-      <p>The idea behind the school started in the begining of Feb 1999 by Dr Qingping Zheng and further effort was put
-        together by Drs Zhang Kefei and Yi Wang with the support from members of the CSSA-NOTT. The school was
-        officially founded on the 21st March 1999 and it is managed by the school committee. Since then the school has
-        been progressing steadily.</p>
-      <!-- School Committee School Committee School Committee School Committee-->
-      <h2 class="w3-text-blue" id="committee" style="padding-top: 120px;">School Committee</h2>
-
-      <table>
-        <tr>
-          <td><b>Headmaster</b></td>
-          <td>Dr Xuezhong Sun</td>
-        </tr>
-        <tr>
-          <td><b>Secretary</b></td>
-          <td>Prof Hao Liu</td>
-        </tr>
-        <tr>
-          <td><b>Treasurer</b></td>
-          <td>Weimeng Xu</td>
-        </tr>
-
-        <tr>
-          <td><b>Deputy Head & e-Learning</b></td>
-          <td>Dr Rong Qu, Li Li</td>
-        </tr>
-        <tr>
-          <td><b>Headteacher Assistant</b></td>
-          <td>Ying Li</td>
-        </tr>
-        <tr>
-          <td><b>Advisory Committee Members</b></td>
-          <td>Dr Yi Wang</td>
-        </tr>
-
-        <tr>
-          <td><b>Other Important Members</b></td>
-          <td>Yupeng Wu, Ming Li, Weibin Li，Jing Zhang</td>
-        </tr>
-        <tr>
-          <td><b>IT Support</b></td>
-          <td>Li Colling</td>
-        </tr>
-
-      </table>
-
-      <!-- School Calendar School Calendar School Calendar School Calendar-->
-      <h2 class="w3-text-blue" id="calendar" style="padding-top: 120px;">School Calendar</h2>
-
-      School year 2021-22 opens on Wednesday 1 September 2021 ( Tuesday 31 August is an Inset day),
-      and ends on the Wednesday 27 July. School does not open on the following weekends:
-      <!--       <li style="color:gray; padding-left: 20px;">24 October 2020</li>  -->
-      <li style="padding-left: 20px;">23/10/2021 Half Term Holiday</li>
-      <li style="padding-left: 20px;">30/10/2021 Half Term Holiday</li>
-      <li style="padding-left: 20px;">18/12/2021 Winter Holiday</li>
-      <li style="padding-left: 20px;">25/12/2021 Winter Holiday</li>
-      <li style="padding-left: 20px;">01/01/2022 Winter Holiday</li>
-      <li style="padding-left: 20px;">19/02/2022 Half Term Holiday</li>
-      <li style="padding-left: 20px;">02/04/2022 Spring Holiday</li>
-      <li style="padding-left: 20px;">09/04/2022 Spring Holiday </li>
-      <li style="padding-left: 20px;">16/04/2022 Spring Holiday</li>
-      <li style="padding-left: 20px;">04/06/2022 Half Term Holiday </li>
-      <li style="padding-left: 20px;">23/07/2022 School Closes/Summer Holiday</li>
+    <!-- Main content: shift it to the right by 220 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:220px; margin-top: 90px;">
+        <div>
+            <button class="w3-button  w3-xlarge w3-hide-large" onclick="w3_open()"><br>&#9776;</button>
+        </div>
 
 
-      <p>
-        <img src="images/adobe-pdf-icon.svg" height="30">
-        <a class="docpdf" href="download/Chinese School Calendar 2021-22.pdf"
-          title="School Terms and Holidays 2021 to 22">Nottingham
+        <!-- <div class="w3-row w3-padding-64"> -->
+        <div class="w3-container" style="width: 95%;">
+
+            <h2 class="w3-text-blue" id="aboutus" style="padding-top: 120px;">About Us</h2>
+
+            <p>Nottingham Chinese School was founded in 1999. In 2020 there were more than 300 pupils in 17 classes. The teaching is based on textbooks specially designed for overseas students (ages 4.5-18) studying Chinese. The teaching covers from beginners
+                to GCSE and A level Chinese.
+            </p>
+            <p>
+                Nottingham Chinese School runs on Saturday afternoons, from 12:15 to 14:15, or from 14:30 to 16:30 for language classes. Activity classes (such as dancing, painting, musical instrument and caligraphy) run from 13:30 to 14:30, or 14:30 to 15:30.
+
+            </p>
+            <p>Nottingham Chinese School is located at the Alderman White School, Chilwell Lane, Bramcote, NG9 3DU, Nottingham.
+
+            </p>
+
+            <br>
+            <p>Quote from County Council Inspection Report 2007:</p>
+            <p class="p3">
+                "... Lessons are well-strcutured with pupils focused and engaged ... Descipline is good, as is support from parents adn of course the Management Committee. This is a well run school with lots of innovation and a desire to continually improve ..."</p>
+            <br>
+
+            <h2 class="w3-text-blue">School History</h2>
+            <p>The idea behind the school started in the begining of Feb 1999 by Dr Qingping Zheng and further effort was put together by Drs Zhang Kefei and Yi Wang with the support from members of the CSSA-NOTT. The school was officially founded on the
+                21st March 1999 and it is managed by the school committee. Since then the school has been progressing steadily.</p>
+            <!-- School Committee School Committee School Committee School Committee-->
+            <h2 class="w3-text-blue" id="committee" style="padding-top: 120px;">School Committee</h2>
+
+            <table>
+                <tr>
+                    <td><b>Headmaster</b></td>
+                    <td>Dr Xuezhong Sun</td>
+                </tr>
+                <tr>
+                    <td><b>Secretary</b></td>
+                    <td>Prof Hao Liu</td>
+                </tr>
+                <tr>
+                    <td><b>Treasurer</b></td>
+                    <td>Weimeng Xu</td>
+                </tr>
+
+                <tr>
+                    <td><b>Deputy Head & e-Learning</b></td>
+                    <td>Dr Rong Qu, Li Li</td>
+                </tr>
+                <tr>
+                    <td><b>Headteacher Assistant</b></td>
+                    <td>Ying Li</td>
+                </tr>
+                <tr>
+                    <td><b>Advisory Committee Members</b></td>
+                    <td>Dr Yi Wang</td>
+                </tr>
+
+                <tr>
+                    <td><b>Other Important Members</b></td>
+                    <td>Yupeng Wu, Ming Li, Weibin Li，Jing Zhang</td>
+                </tr>
+                <tr>
+                    <td><b>IT Support</b></td>
+                    <td>Li Colling</td>
+                </tr>
+
+            </table>
+
+            <!-- School Calendar School Calendar School Calendar School Calendar-->
+            <h2 class="w3-text-blue" id="calendar" style="padding-top: 120px;">School Calendar</h2>
+
+            School year 2021-22 opens on Wednesday 1 September 2021 ( Tuesday 31 August is an Inset day), and ends on the Wednesday 27 July. School does not open on the following weekends:
+            <!--       <li style="color:gray; padding-left: 20px;">24 October 2020</li>  -->
+            <li style="padding-left: 20px;">23/10/2021 Half Term Holiday</li>
+            <li style="padding-left: 20px;">30/10/2021 Half Term Holiday</li>
+            <li style="padding-left: 20px;">18/12/2021 Winter Holiday</li>
+            <li style="padding-left: 20px;">25/12/2021 Winter Holiday</li>
+            <li style="padding-left: 20px;">01/01/2022 Winter Holiday</li>
+            <li style="padding-left: 20px;">19/02/2022 Half Term Holiday</li>
+            <li style="padding-left: 20px;">02/04/2022 Spring Holiday</li>
+            <li style="padding-left: 20px;">09/04/2022 Spring Holiday </li>
+            <li style="padding-left: 20px;">16/04/2022 Spring Holiday</li>
+            <li style="padding-left: 20px;">04/06/2022 Half Term Holiday </li>
+            <li style="padding-left: 20px;">23/07/2022 School Closes/Summer Holiday</li>
+
+
+            <p>
+                <img src="images/adobe-pdf-icon.svg" height="30">
+                <a class="docpdf" href="download/Chinese School Calendar 2021-22.pdf" title="School Terms and Holidays 2021 to 22">Nottingham
           Chinese School Calendar 2021 to 22</a>
-      </p>
+            </p>
 
 
-      <!-- Class rooms and sessions -->
-      <!-- Class rooms and sessions -->
+            <!-- Class rooms and sessions -->
+            <!-- Class rooms and sessions -->
 
 
-      <h2 class="w3-text-blue" id="classes" style="padding-top: 120px;">Session Timetable</h2>
-      <p>Nottingham Chinese School provide various activity classes, including Chinese calligraphy, painting, dancing,
-        recitation and musical intrument (Pipa). Activity classes are held from 13:15 ~ 14:15, or 14:30~15:30. For more
-        details on activity classes and their availability, please contact school.</p>
+            <h2 class="w3-text-blue" id="classes" style="padding-top: 120px;">Session Timetable</h2>
+            <p>Nottingham Chinese School provide various activity classes, including Chinese calligraphy, painting, dancing, recitation and musical intrument (Pipa). Activity classes are held from 13:15 ~ 14:15, or 14:30~15:30. For more details on activity
+                classes and their availability, please contact school.</p>
 
-      <p>School map is shown below: </p>
-      <img src="images/schoolmap-en.PNG" style="height:350px;"> <br><br>
+            <p>School map is shown below: </p>
+            <img src="images/schoolmap-en.PNG" style="height:350px;"> <br><br>
 
-      <p style="color:red"><b>Whilst teaching is held online, all activity classes are closed and will resume on further
+            <p style="color:red"><b>Whilst teaching is held online, all activity classes are closed and will resume on further
           notice.</b></p>
 
-      <table style="width: 80%;">
-        <thead>
-          <tr style="text-align: left;">
-            <th>Class</th>
-            <th>Teacher</th>
-            <th>Time</th>
-            <th>Location</th>
-          </tr>
-        </thead>
+            <table style="width: 80%;">
+                <thead>
+                    <tr style="text-align: left;">
+                        <th>Class</th>
+                        <th>Teacher</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
 
-        <tr>
-          <td>Dancing</td>
-          <td>S. Dong (董)</td>
-          <td>13:30pm ~ 14:30pm</td>
-          <td>Drama Classroom</td>
-        </tr>
+                <tr>
+                    <td>Dancing</td>
+                    <td>S. Dong (董)</td>
+                    <td>13:30pm ~ 14:30pm</td>
+                    <td>Drama Classroom</td>
+                </tr>
 
-        <tr>
-          <td>Music </td>
-          <td>S. Zhang (张)</td>
-          <td>14:30pm ~ 16:30pm</td>
-          <td>Language Building</td>
-        </tr>
+                <tr>
+                    <td>Music </td>
+                    <td>S. Zhang (张)</td>
+                    <td>14:30pm ~ 16:30pm</td>
+                    <td>Language Building</td>
+                </tr>
 
-        <tr>
-          <td>Calligraphy </td>
-          <td>Y. Li (李)</td>
-          <td>13:15pm ~ 14:15pm</td>
-          <td>Language Building</td>
-        </tr>
+                <tr>
+                    <td>Calligraphy </td>
+                    <td>Y. Li (李)</td>
+                    <td>13:15pm ~ 14:15pm</td>
+                    <td>Language Building</td>
+                </tr>
 
-        <tr>
-          <td>Painting </td>
-          <td>F. Lee (李)</td>
-          <td>13:15pm ~ 14:15pm or 14:30pm ~ 15:30pm</td>
-          <td>Library</td>
-        </tr>
-      </table>
-      <br><br>
-      <p>Language lessons range from reception class up to A-level. For academic year 2021-2022 Summer term, teacher
-        assignment is as following:
-      </p>
+                <tr>
+                    <td>Painting </td>
+                    <td>F. Lee (李)</td>
+                    <td>13:15pm ~ 14:15pm or 14:30pm ~ 15:30pm</td>
+                    <td>Library</td>
+                </tr>
+            </table>
+            <br><br>
+            <p>Language lessons range from reception class up to A-level. For academic year 2021-2022 Summer term, teacher assignment is as following:
+            </p>
 
-      <table style="width: 80%;">
-        <thead>
-          <tr style="text-align: left;">
-            <th>Class</th>
-            <th>Teacher</th>
-            <th>Time</th>
-            <th>Location</th>
-          </tr>
-        </thead>
+            <table style="width: 80%;">
+                <thead>
+                    <tr style="text-align: left;">
+                        <th>Class</th>
+                        <th>Teacher</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
 
-        <tr>
-          <td>Reception 1</td>
-          <td>T. Zhang / 张桃李</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 1</td>
-        </tr>
-        <tr>
-          <td>Reception 2</td>
-          <td>T. Zhang / 张桃李</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 1</td>
-        </tr>
-        <tr>
-          <td>Class 1a</td>
-          <td>Y. Li / 李莹</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 2</td>
-        </tr>
+                <tr>
+                    <td>Reception 1</td>
+                    <td>T. Zhang / 张桃李</td>
+                    <td>12:00pm ~ 14:00pm</td>
+                    <td>Language Building - Classroom 1</td>
+                </tr>
+                <tr>
+                    <td>Reception 2</td>
+                    <td>T. Zhang / 张桃李</td>
+                    <td>14:15pm ~ 16:15pm</td>
+                    <td>Language Building - Classroom 1</td>
+                </tr>
+                <tr>
+                    <td>Class 1a</td>
+                    <td>Y. Li / 李莹</td>
+                    <td>12:00pm ~ 14:00pm</td>
+                    <td>Language Building - Classroom 2</td>
+                </tr>
 
-        <tr>
-          <td>Class 1b</td>
-          <td>Y. Li / 李莹</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 2</td>
-        </tr>
+                <tr>
+                    <td>Class 1b</td>
+                    <td>Y. Li / 李莹</td>
+                    <td>14:15pm ~ 16:15pm</td>
+                    <td>Language Building - Classroom 2</td>
+                </tr>
 
-        <tr>
-          <td>Class 2a</td>
-          <td>Y. Deng / 邓喻丹</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 3</td>
-        </tr>
+                <tr>
+                    <td>Class 2a</td>
+                    <td>Y. Deng / 邓喻丹</td>
+                    <td>12:00pm ~ 14:00pm</td>
+                    <td>Language Building - Classroom 3</td>
+                </tr>
 
-        <tr>
-          <td>Class 2b</td>
-          <td>Y. Deng / 邓喻丹</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 3</td>
-        </tr>
+                <tr>
+                    <td>Class 2b</td>
+                    <td>Y. Deng / 邓喻丹</td>
+                    <td>14:15pm ~ 16:15pm</td>
+                    <td>Language Building - Classroom 3</td>
+                </tr>
 
-        <tr>
-          <td>Class 2c</td>
-          <td>L. Ye / 叶丽</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 5</td>
-        </tr>
+                <tr>
+                    <td>Class 2c</td>
+                    <td>L. Ye / 叶丽</td>
+                    <td>12:00pm ~ 14:00pm</td>
+                    <td>Language Building - Classroom 5</td>
+                </tr>
 
-        <tr>
-          <td>Class 3a</td>
-          <td>G. Wang / 王关静</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 4</td>
-        </tr>
+                <tr>
+                    <td>Class 3a</td>
+                    <td>G. Wang / 王关静</td>
+                    <td>12:00pm ~ 14:00pm</td>
+                    <td>Language Building - Classroom 4</td>
+                </tr>
 
-        <tr>
-          <td>Class 3b</td>
-          <td>Y. Minnican / 潘艳玲</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 4</td>
-        </tr>
+                <tr>
+                    <td>Class 3b</td>
+                    <td>Y. Minnican / 潘艳玲</td>
+                    <td>14:15pm ~ 16:15pm</td>
+                    <td>Language Building - Classroom 4</td>
+                </tr>
 
-        <tr>
-          <td>Class 4a</td>
-          <td>Q. Shi / 史奇志</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 8</td>
-        </tr>
+                <tr>
+                    <td>Class 4a</td>
+                    <td>Q. Shi / 史奇志</td>
+                    <td>12:30pm ~ 14:30pm</td>
+                    <td>Language Building - Classroom 8</td>
+                </tr>
 
-        <tr>
-          <td>Class 4b</td>
-          <td>L. Ye / 叶丽</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 5</td>
-        </tr>
+                <tr>
+                    <td>Class 4b</td>
+                    <td>L. Ye / 叶丽</td>
+                    <td>14:15pm ~ 16:15pm</td>
+                    <td>Language Building - Classroom 5</td>
+                </tr>
 
-        <tr>
-          <td>Class 4c</td>
-          <td>M. Zhang / 张红梅</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 7</td>
-        </tr>
+                <tr>
+                    <td>Class 4c</td>
+                    <td>M. Zhang / 张红梅</td>
+                    <td>12:30pm ~ 14:30pm</td>
+                    <td>Language Building - Classroom 7</td>
+                </tr>
 
-        <tr>
-          <td>Class 5a</td>
-          <td>S. Guo / 郭莎莎</td>
-          <td>12:00pm ~ 14:00pm</td>
-          <td>Language Building - Classroom 6</td>
-        </tr>
+                <tr>
+                    <td>Class 5a</td>
+                    <td>S. Guo / 郭莎莎</td>
+                    <td>12:30pm ~ 14:30pm</td>
+                    <td>Language Building - Classroom 6</td>
+                </tr>
 
-        <tr>
-          <td>Class 5b</td>
-          <td>Z. Cui / 崔贞</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 6</td>
-        </tr>
+                <tr>
+                    <td>Class 5b</td>
+                    <td>Q. Yu / 余沁</td>
+                    <td>14:45pm ~ 16:45pm</td>
+                    <td>Language Building - Classroom 6</td>
+                </tr>
 
-        <tr>
-          <td>Class 6</td>
-          <td>M. Zhang / 张红梅</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 7</td>
-        </tr>
+                <tr>
+                    <td>Class 6</td>
+                    <td>M. Zhang / 张红梅</td>
+                    <td>14:45pm ~ 16:45pm</td>
+                    <td>Language Building - Classroom 7</td>
+                </tr>
 
-        <tr>
-          <td>Class 7</td>
-          <td>H. Wang / 王慧华</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Classroom 8</td>
-        </tr>
+                <tr>
+                    <td>Class 7</td>
+                    <td>H. Wang / 王慧华</td>
+                    <td>14:45pm ~ 16:45pm</td>
+                    <td>Language Building - Classroom 8</td>
+                </tr>
 
-        <tr>
-          <td>Class 8 / GCSE</td>
-          <td>J. Tang / 唐捷</td>
-          <td>13:30pm ~ 16:30pm</td>
-          <td>Language Building - Lab 9</td>
-        </tr>
+                <tr>
+                    <td>Class 8 / GCSE</td>
+                    <td>J. Tang / 唐捷</td>
+                    <td>13:30pm ~ 16:30pm</td>
+                    <td>Language Building - Lab 9</td>
+                </tr>
 
-        <tr>
-          <td>Class 9 / A-level</td>
-          <td>S. Brealey / 常金凤</td>
-          <td>14:45pm ~ 16:45pm</td>
-          <td>Language Building - Lab 12</td>
-        </tr>
-      </table>
+                <tr>
+                    <td>Class 9 / A-level</td>
+                    <td>S. Brealey / 常金凤</td>
+                    <td>13:30pm ~ 16:30pm</td>
+                    <td>Language Building - Lab 12</td>
+                </tr>
+            </table>
 
-      <p style="color:darkgreen">Language Building layout：</p>
-<img src="images/language-building-layout.PNG" style="height:350px;"> <br><br>
-
-
-
-      <!-- Other procedures Other procedures Other procedures Other procedures  -->
-      <!-- Other procedures Other procedures Other procedures Other procedures  -->
-      <!-- Class rooms and sessions -->
-
-
-      <h2 class="w3-text-blue" id="procedures" style="padding-top: 120px;">Key Procedures</h2>
-
-
-      <table>
-        <tr>
-          <td>
-            <a href="download/NCS Admission Procedure.pdf"><img src="images/adobe-pdf-icon.svg" height="30">&nbsp;School
-              Admission Procedure</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <a href="download/NCS Handbook - Fire Drill.pdf"><img src="images/adobe-pdf-icon.svg"
-                height="30">&nbsp;Emergency - Fire Drill</a>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <a href="download/NCS - Child Protection Procedures.pdf"><img src="images/adobe-pdf-icon.svg"
-                height="30">&nbsp;Child Protection</a>
-          </td>
-
-        </tr>
-
-        <tr>
-          <td>
-            <a href="download/NCS - Tuition and School Duty deposit.pdf"><img src="images/adobe-pdf-icon.svg"
-                height="30">&nbsp;Tuition and School Duty Deposit</a>
-          </td>
-
-        </tr>
-
-        <tr>
-          <td>
-            <a href="download/Complaints Procedures.pdf"><img src="images/adobe-pdf-icon.svg"
-                height="30">&nbsp;Complaints Procedures</a>
-          </td>
-        </tr>
+            <p style="color:darkgreen">Language Building layout：</p>
+            <img src="images/language-building-layout.PNG" style="height:350px;"> <br><br>
 
 
 
-      </table>
+            <!-- Other procedures Other procedures Other procedures Other procedures  -->
+            <!-- Other procedures Other procedures Other procedures Other procedures  -->
+            <!-- Class rooms and sessions -->
+
+
+            <h2 class="w3-text-blue" id="procedures" style="padding-top: 120px;">Key Procedures</h2>
+
+
+            <table>
+                <tr>
+                    <td>
+                        <a href="download/NCS Admission Procedure.pdf"><img src="images/adobe-pdf-icon.svg" height="30">&nbsp;School Admission Procedure</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="download/NCS Handbook - Fire Drill.pdf"><img src="images/adobe-pdf-icon.svg" height="30">&nbsp;Emergency - Fire Drill</a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="download/NCS - Child Protection Procedures.pdf"><img src="images/adobe-pdf-icon.svg" height="30">&nbsp;Child Protection</a>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="download/NCS - Tuition and School Duty deposit.pdf"><img src="images/adobe-pdf-icon.svg" height="30">&nbsp;Tuition and School Duty Deposit</a>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="download/Complaints Procedures.pdf"><img src="images/adobe-pdf-icon.svg" height="30">&nbsp;Complaints Procedures</a>
+                    </td>
+                </tr>
+
+
+
+            </table>
 
 
 
 
 
 
-    </div>
+        </div>
 
 
-    <!-- NEWS ARCHIVES -->
-    <!-- <div class="w3-quarter w3-container widget ">
+        <!-- NEWS ARCHIVES -->
+        <!-- <div class="w3-quarter w3-container widget ">
       <div class="w3-padding-small w3-padding-32 w3-center ">
         <h3 class="widget-title">Archives</h3>
         <ul>
@@ -480,27 +463,27 @@
 
 
 
-    <!-- END MAIN -->
+        <!-- END MAIN -->
 
 
-    <script>
-      // Get the Sidebar
-      var mySidebar = document.getElementById("mySidebar");
+        <script>
+            // Get the Sidebar
+            var mySidebar = document.getElementById("mySidebar");
 
-      // Get the DIV with overlay effect
-      var overlayBg = document.getElementById("myOverlay");
+            // Get the DIV with overlay effect
+            var overlayBg = document.getElementById("myOverlay");
 
-      // Toggle between showing and hiding the sidebar, and add overlay effect
+            // Toggle between showing and hiding the sidebar, and add overlay effect
 
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
 
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-    </script>
-    <br><br><br><br><br><br><br><br><br><br>
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+        <br><br><br><br><br><br><br><br><br><br>
 
 </body>
 
